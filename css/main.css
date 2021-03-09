@@ -2,7 +2,8 @@ main{
     background-color: white;
 }
 
- .gray-text{
+ .gray-text 
+ h2{
      color: #6F7380;
      font-size: small;
      text-transform: uppercase;

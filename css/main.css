@@ -1,0 +1,25 @@
+main{
+    background-color: white;
+}
+
+ .gray-text{
+     color: #6F7380;
+     font-size: small;
+     text-transform: uppercase;
+     text-align: center;
+
+ }
+ .smaller-image{
+     width: 400px;
+ }
+
+ .Fourth{
+     color:#505155;
+    font-style: inherit;
+ }
+ .title{
+     text-align: center;
+     font-size: 45px;
+     
+
+ }

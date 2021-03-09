@@ -18,16 +18,15 @@ color: red;
      width: 400px;
  }
  .title{
-     text-align: center;
+     font-weight: bold;
+     text-align: left;
      font-size: 45px;
      color: #505155;
      text-transform: uppercase;
      text-align: left;
      font-family: 'playfair display', serif ;
-     
-
- }
- p{
+     }
+ #described{
      color:#505155;
      text-align: left;
     font-size: 19px;
@@ -35,14 +34,15 @@ color: red;
     font-family: 'roboto', sans-serif;
 
  }
-   .logo{
+   .numbers{
+       font-weight: bold;
        color:#232428;
        font-size: 60px;
        line-height: 1.rem;
        text-align: left;
        font-family: 'roboto', sans-serif;
    }
-     .menu {
+     .beauty {
          color:#505155;
          list-style: none;
          font-size: 15px;

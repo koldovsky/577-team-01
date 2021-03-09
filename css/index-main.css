@@ -1,0 +1,64 @@
+/*Halyna Berdyk*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
+:root {
+    --text-color: #505155;
+    --main-color: #ffffff;
+    --main-font-family:'Roboto', sans-serif;
+    --logo-font-family: 'Playfair Display', serif;
+}
+
+.info {
+    background-color: var(--main-color);
+}
+
+.info-instruction {
+    background-image: url("../img/section-bg.jpg");
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info h2 {
+    color: #6f7380;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+.info h2::before {
+    content: "一";
+    color: #f51400;
+}
+
+.basic-info p {
+    font-family: var(--logo-font-family);
+    font-size: 45px;
+    color: var(--text-color);
+}
+
+.blue {
+    color: #14a9ee;
+}
+
+.general-info p {
+    font-family: var(--main-font-family);
+    font-size: 19px;
+    color: var(--text-color);
+}
+
+.instruction img {
+    width:10%;
+}
+
+#h3 {
+    font-family: var(--main-font-family);
+    font-size: 24px;
+    color: #232428;
+}
+
+.instruction p {
+    font-family: var(--main-font-family);
+    font-size: 15px;
+    color: var(--text-color);
+}
+/*Halyna Berdyk*/

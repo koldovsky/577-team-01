@@ -1,0 +1,86 @@
+/* Berdyk Halyna*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
+
+header {
+    background-image: url("../img/header-bg.png");
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+:root {
+    --menu-color: #f7f7f7;
+    --main-color: #ffffff;
+    --main-font-family:'Roboto', sans-serif;
+    --logo-font-family: 'Playfair Display', serif;
+}
+.logo > img {
+    width: 188px;
+}
+
+.main-menu a {
+    color: var(--menu-color);
+    font-size: 14px;
+    font-family: var(--main-font-family);
+    text-decoration: none;
+}
+ 
+.main-menu li {
+    list-style: none;
+}
+.main-menu a:hover {
+    text-shadow:0px 0px 10px #f7f7f7;
+}
+
+#subtitle {
+    color: var(--main-color);
+    font-family: var(--main-font-family);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#subtitle::before {
+    content: "一 ";
+    color: #f51400;
+}
+
+.banner h1 {
+    font-family: var(--logo-font-family);
+    font-size: 180px;
+    color: var(--main-color);
+}
+
+.trip p:first-child {
+    color: var(--main-color);
+    font-family: var(--main-font-family);
+    font-size: 17px;
+    font-weight: bold;
+}
+.trip p:nth-child(2) {
+    color: var(--main-color);
+    font-family: var(--main-font-family);
+    font-size: 13px;
+}
+.trip p:nth-last-child(2) {
+    color: #ffffffbf;
+    font-family: var(--main-font-family);
+    font-size: 13px;
+}
+.trip a {
+    color: var(--main-color);
+    font-family: var(--main-font-family);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.trip a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+.trip a::after {
+    content: "   →";
+    color: #ffffff;
+    pointer-events: none;
+}
+/* Berdyk Halyna*/

@@ -1,9 +1,10 @@
-main{
-    background-color: white;
-}
 
+ .gray-text::before {
+content: "-";
+color: red;
+ }
  .gray-text 
- h2{
+ {
      color: #6F7380;
      font-size: small;
      text-transform: uppercase;
@@ -34,12 +35,16 @@ main{
 
  }
    .logo{
+       
        font-size: 60px;
        line-height: 1.rem;
        text-align: center;
    }
-     .menu{
+     .menu {
+         list-style: none;
          font-size: 15px;
          line-height: 1,6.rem;
          text-align: center;
      }
+      
+    

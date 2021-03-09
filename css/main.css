@@ -20,6 +20,25 @@ main{
  .title{
      text-align: center;
      font-size: 45px;
+     color: #6F7380;
+     text-transform: uppercase;
+     text-align: center;
      
 
  }
+ p{
+     text-align: center;
+    font-size: 19px;
+    line-height: 1,7;
+
+ }
+   .logo{
+       font-size: 60px;
+       line-height: 1.rem;
+       text-align: center;
+   }
+     .menu{
+         font-size: 15px;
+         line-height: 1,6.rem;
+         text-align: center;
+     }

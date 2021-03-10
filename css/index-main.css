@@ -1,6 +1,7 @@
 /*Halyna Berdyk*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
+
 :root {
     --text-color: #505155;
     --main-color: #ffffff;
@@ -62,3 +63,54 @@
     color: var(--text-color);
 }
 /*Halyna Berdyk*/
+/*Bohdana*/
+.gray-text::before {
+content: "-";
+color: red;
+ }
+ .gray-text 
+ {
+     color: #6F7380;
+     font-size: small;
+     text-transform: uppercase;
+     text-align: left;
+     font-family: 'roboto', sans-serif;
+
+ }
+ .smaller-image{
+     width: 400px;
+ }
+ .title{
+     font-weight: bold;
+     text-align: left;
+     font-size: 45px;
+     color: #505155;
+     text-transform: uppercase;
+     text-align: left;
+     font-family: 'playfair display', serif ;
+     }
+ #described{
+     color:#505155;
+     text-align: left;
+    font-size: 19px;
+    line-height: 1.7rem;
+    font-family: 'roboto', sans-serif;
+
+ }
+   .numbers{
+       font-weight: bold;
+       color:#232428;
+       font-size: 60px;
+       line-height: 1.rem;
+       text-align: left;
+       font-family: 'roboto', sans-serif;
+   }
+     .beauty {
+         color:#505155;
+         list-style: none;
+         font-size: 15px;
+         line-height: 1,6.rem;
+         text-align: left;
+         font-family: 'roboto', sans-serif;
+     }
+     /*Bohdana*/

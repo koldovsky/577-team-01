@@ -51,7 +51,7 @@
     width:10%;
 }
 
-#h3 {
+.instruction h3 {
     font-family: var(--main-font-family);
     font-size: 24px;
     color: #232428;
@@ -65,6 +65,13 @@
 /*Halyna Berdyk*/
 
 /*Andrii*/
+.testimonials {
+    background-image: url("../img/testimonials-bg.png");
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #testimonials::before {
     content: "一";
     Color: red;
@@ -93,19 +100,28 @@ text-align: center;
     color: #232428;
     text-align: center;
 }
-#feedback {
+.feedback {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
     color: #707070;
     text-align: center;
 }
-#date {
+.date {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: var(--secondary-color);
     text-align: center;
     font-weight: bold;
 }
+
+.border {
+    width: 25%;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 60%;
+    border-color: #f5f5f5;
+}
+
 /* Andrii*/
 /*Bohdana*/
 .gray-text::before {
@@ -129,15 +145,12 @@ color: red;
      text-align: left;
      font-size: 45px;
      color: #505155;
-     text-transform: uppercase;
-     text-align: left;
      font-family: 'playfair display', serif ;
      }
  #describe{
      color:#505155;
      text-align: left;
     font-size: 19px;
-    line-height: 1.7rem;
     font-family: 'roboto', sans-serif;
 
  }
@@ -145,7 +158,6 @@ color: red;
      color:#505155;
      text-align: left;
     font-size: 19px;
-    line-height: 1.7rem;
     font-family: 'roboto', sans-serif;
 
  }
@@ -153,14 +165,12 @@ color: red;
      color:#505155;
      text-align: left;
     font-size: 19px;
-    line-height: 1.7rem;
     font-family: 'roboto', sans-serif;
  }
    .numbers{
        font-weight: bold;
        color:#232428;
        font-size: 60px;
-       line-height: 1.rem;
        text-align: left;
        font-family: 'roboto', sans-serif;
    }
@@ -168,7 +178,6 @@ color: red;
          color:#505155;
          list-style: none;
          font-size: 15px;
-         line-height: 1,6.rem;
          text-align: left;
          font-family: 'roboto', sans-serif;
      }

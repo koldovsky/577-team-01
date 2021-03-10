@@ -1,0 +1,19 @@
+.red-color{
+    color: red;
+}
+.tour-booking a{
+    text-decoration: none;
+    color: #969799;
+}
+#contacts-btn{
+    background-color: #15a9ee;
+    color: white;
+}
+.tour-booking{
+    color: #505155;
+    font-family: Roboto;
+}
+
+.heading-of-booking{
+    font-family: Playfair Display;
+}

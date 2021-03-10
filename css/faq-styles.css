@@ -1,0 +1,22 @@
+.faq{
+    font-family: Roboto;
+    background-color: #232528;
+    color: #a7a7a9;
+}
+
+.heading-of-faq{
+    font-family: Playfair Display;
+    color: #fff;
+}
+
+.grey-color{
+    color: #505155;
+}
+
+.accordion-header{
+    color:#fff;
+}
+
+.accordion-content{
+    color:  #a7a7a9;
+}

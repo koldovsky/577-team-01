@@ -135,6 +135,7 @@ color: red;
      text-transform: uppercase;
      text-align: left;
      font-family: 'roboto', sans-serif;
+     line-height: 1.6px;
 
  }
  .smaller-image{
@@ -146,12 +147,14 @@ color: red;
      font-size: 45px;
      color: #505155;
      font-family: 'playfair display', serif ;
+     line-height: 1.2px;
      }
  #describe{
      color:#505155;
      text-align: left;
     font-size: 19px;
     font-family: 'roboto', sans-serif;
+    line-height: 1.7px;
 
  }
  #describe-two{
@@ -159,6 +162,7 @@ color: red;
      text-align: left;
     font-size: 19px;
     font-family: 'roboto', sans-serif;
+    line-height: 1.7px;
 
  }
  #describe-three{
@@ -166,6 +170,7 @@ color: red;
      text-align: left;
     font-size: 19px;
     font-family: 'roboto', sans-serif;
+    line-height: 1.7px;
  }
    .numbers{
        font-weight: bold;
@@ -173,6 +178,7 @@ color: red;
        font-size: 60px;
        text-align: left;
        font-family: 'roboto', sans-serif;
+       line-height: 1px;
    }
      .beauty {
          color:#505155;
@@ -180,6 +186,7 @@ color: red;
          font-size: 15px;
          text-align: left;
          font-family: 'roboto', sans-serif;
+         line-height: 1.6px;
      }
      /*Bohdana*/
 /*Den*/

@@ -1,5 +1,5 @@
 .red-color{
-    color: red;
+    color: #ee2e16
 }
 .tour-booking a{
     text-decoration: none;
@@ -7,7 +7,7 @@
 }
 #contacts-btn{
     background-color: #15a9ee;
-    color: white;
+    color: #fff;
 }
 .tour-booking{
     color: #505155;

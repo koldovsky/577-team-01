@@ -65,7 +65,7 @@
 /*Halyna Berdyk*/
 /*Bohdana*/
 .gray-text::before {
-content: "-";
+content: "一 ";
 color: red;
  }
  .gray-text 

@@ -62,3 +62,49 @@
     color: var(--text-color);
 }
 /*Halyna Berdyk*/
+
+/*Andrii*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto:wght@100&display=swap');
+#testimonials::before {
+    content: "-";
+    Color: red;
+}
+#testimonials {
+    font-family: 'Roboto', sans-serif;    
+    font-size: 12px;
+    color: #505155;
+    text-align: center;
+}
+.experience {
+font-family: 'Playfair Display', serif;
+font-size: 34px;
+color: #505155;
+text-align: center;
+}
+.reviews {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 19px;
+    color: #505155;
+   text-align: center;
+}
+.name {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 22px;
+    color: #232428;
+    text-align: center;
+}
+#feedback {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: #707070;
+    text-align: center;
+}
+#date {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #505155;
+    text-align: center;
+    font-weight: bold;
+}
+/* Andrii*/

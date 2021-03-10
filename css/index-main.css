@@ -51,7 +51,7 @@
     width:10%;
 }
 
-#h3 {
+.instruction h3 {
     font-family: var(--main-font-family);
     font-size: 24px;
     color: #232428;
@@ -100,13 +100,13 @@ text-align: center;
     color: #232428;
     text-align: center;
 }
-#feedback {
+.feedback {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
     color: #707070;
     text-align: center;
 }
-#date {
+.date {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: var(--secondary-color);

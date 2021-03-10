@@ -133,13 +133,28 @@ color: red;
      text-align: left;
      font-family: 'playfair display', serif ;
      }
- #described{
+ #describe{
      color:#505155;
      text-align: left;
     font-size: 19px;
     line-height: 1.7rem;
     font-family: 'roboto', sans-serif;
 
+ }
+ #describe-two{
+     color:#505155;
+     text-align: left;
+    font-size: 19px;
+    line-height: 1.7rem;
+    font-family: 'roboto', sans-serif;
+
+ }
+ #describe-three{
+     color:#505155;
+     text-align: left;
+    font-size: 19px;
+    line-height: 1.7rem;
+    font-family: 'roboto', sans-serif;
  }
    .numbers{
        font-weight: bold;

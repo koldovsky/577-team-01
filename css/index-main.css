@@ -182,3 +182,51 @@ color: red;
          font-family: 'roboto', sans-serif;
      }
      /*Bohdana*/
+/*Den*/
+#beautiful {
+    color:white;
+    font-size:30px;
+}
+#landscapes {
+    color:gray;
+    font-size:30px;
+}
+.beautiful-landscapes{
+    margin-bottom:10px;
+}
+.carousel {
+    width:300px;
+    max-height:300px;
+}
+.norway-beauty{
+    font-family:'Roboto', serif;
+}
+.contacts{
+    background-image:url(/img/norway-berg.png);
+    background-size:cover;
+}
+#contacts {
+    font-family: 'Roboto', sans-serif;    
+    font-size: 12px;
+    color: var(--secondary-color);
+    text-align: center;
+}
+.contacts h2 {
+    color: #6f7380;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+.contacts h2::before {
+    content: "一";
+    color: #f51400;
+}
+#book-the-journey{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-size:30px;
+}
+#request-a-quote{
+    background-color:#00BFFF;
+
+}

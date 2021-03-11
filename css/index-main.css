@@ -137,20 +137,24 @@ color: red;
      text-align: center;
      font-family: 'roboto', sans-serif;
  }
-
+   .main-container{
+       padding-top: 120px;
+       padding-bottom: 60px;
+       background-color: #ffffff;
+   }
  @media (min-width: 610px){
      main .main-container{
          display: grid;
-         grid-gap: 5px;
+         grid-gap: 30px;
          grid-template-columns: 1fr 1fr ;
+         
 
      }
     }
     @media (min-width: 800px) {
          main .main-container{
-         display: grid;
-         grid-gap: 5px;
          grid-template-columns: 1fr 1fr 1fr;
+         
 
      }
 
@@ -159,7 +163,6 @@ color: red;
 
  .smaller-image{
      width: 400px;
-     text-align: left;
  }
  .title{
      font-weight: bold;

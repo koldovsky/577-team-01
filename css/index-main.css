@@ -124,6 +124,7 @@ text-align: center;
 
 /* Andrii*/
 /*Bohdana*/
+ 
 .gray-text::before {
 content: "一 ";
 color: red;
@@ -133,52 +134,90 @@ color: red;
      color: #6F7380;
      font-size: small;
      text-transform: uppercase;
-     text-align: left;
+     text-align: center;
      font-family: 'roboto', sans-serif;
-     line-height: 1.6px;
-
  }
+
+ @media (min-width: 610px){
+     main .main-container{
+         display: grid;
+         grid-gap: 5px;
+         grid-template-columns: 1fr 1fr ;
+
+     }
+    }
+    @media (min-width: 800px) {
+         main .main-container{
+         display: grid;
+         grid-gap: 5px;
+         grid-template-columns: 1fr 1fr 1fr;
+
+     }
+
+    }
+     
+
  .smaller-image{
      width: 400px;
+     text-align: left;
  }
  .title{
      font-weight: bold;
-     text-align: left;
+     text-align: center;
      font-size: 45px;
      color: #505155;
      font-family: 'playfair display', serif ;
-     line-height: 1.2px;
      }
+    
  #describe{
      color:#505155;
-     text-align: left;
+     text-align: center;
     font-size: 19px;
     font-family: 'roboto', sans-serif;
-    line-height: 1.7px;
 
  }
  #describe-two{
      color:#505155;
-     text-align: left;
+     text-align: right;
     font-size: 19px;
     font-family: 'roboto', sans-serif;
-    line-height: 1.7px;
 
  }
  #describe-three{
      color:#505155;
-     text-align: left;
+     text-align: right;
     font-size: 19px;
     font-family: 'roboto', sans-serif;
-    line-height: 1.7px;
  }
+
+ @media (min-width: 610px) {
+     main .nav {
+         display: flex;
+        }
+        main .numbers {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            justify-content: space-around;
+
+        }
+     
+     }
+
    .numbers{
-       font-weight: bold;
+       list-style-type: none;
        color:#232428;
        font-size: 60px;
-       text-align: left;
        font-family: 'roboto', sans-serif;
-       line-height: 1px;
+       
+   }
+   @media (min-width: 610px) {
+       main .beauty{
+           display: flex;
+           flex-direction: row;
+           flex: 1;
+           justify-content: space-around;
+       }
    }
      .beauty {
          color:#505155;
@@ -186,7 +225,6 @@ color: red;
          font-size: 15px;
          text-align: left;
          font-family: 'roboto', sans-serif;
-         line-height: 1.6px;
      }
      /*Bohdana*/
 /*Den*/

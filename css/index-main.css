@@ -144,6 +144,7 @@ color: red;
        padding-left: 60px;
        padding-bottom: 60px;
        padding-right: 60px;
+       background-color: #ffffff;
     
    }
  @media (min-width: 610px){
@@ -215,7 +216,7 @@ color: red;
      
      }
 
-   .numbers{
+        .numbers {
        list-style-type: none;
        color:#232428;
        font-size: 60px;
@@ -238,6 +239,7 @@ color: red;
          font-size: 15px;
          text-align: left;
          font-family: 'roboto', sans-serif;
+         
      }
      /*Bohdana*/
 /*Den*/

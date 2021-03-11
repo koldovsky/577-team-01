@@ -134,19 +134,24 @@ color: red;
      color: #6F7380;
      font-size: small;
      text-transform: uppercase;
-     text-align: center;
+     text-align: left;
      font-family: 'roboto', sans-serif;
+     font-weight: normal;
  }
-   .main-container{
-       padding-top: 120px;
+   
+   .main-container {
+       padding-top: 60px;
+       padding-left: 60px;
        padding-bottom: 60px;
-       background-color: #ffffff;
+       padding-right: 60px;
+    
    }
  @media (min-width: 610px){
      main .main-container{
          display: grid;
-         grid-gap: 30px;
+         grid-gap: 50px;
          grid-template-columns: 1fr 1fr ;
+         
          
 
      }
@@ -159,14 +164,14 @@ color: red;
      }
 
     }
-     
-
  .smaller-image{
-     width: 400px;
+     width: 350px;
+     text-align: center;
  }
  .title{
      font-weight: bold;
-     text-align: center;
+     line-height: normal;
+     text-align: left;
      font-size: 45px;
      color: #505155;
      font-family: 'playfair display', serif ;
@@ -174,21 +179,24 @@ color: red;
     
  #describe{
      color:#505155;
-     text-align: center;
+     line-height: 0.8cm;
+     text-align: left;
     font-size: 19px;
     font-family: 'roboto', sans-serif;
 
  }
  #describe-two{
      color:#505155;
-     text-align: right;
+     line-height: 0.8cm;
+     text-align: left;
     font-size: 19px;
     font-family: 'roboto', sans-serif;
 
  }
  #describe-three{
      color:#505155;
-     text-align: right;
+     line-height: 0.8cm;
+     text-align: left;
     font-size: 19px;
     font-family: 'roboto', sans-serif;
  }
@@ -212,6 +220,7 @@ color: red;
        color:#232428;
        font-size: 60px;
        font-family: 'roboto', sans-serif;
+       text-align: center;
        
    }
    @media (min-width: 610px) {
@@ -223,6 +232,7 @@ color: red;
        }
    }
      .beauty {
+         padding-bottom: 60px;
          color:#505155;
          list-style: none;
          font-size: 15px;

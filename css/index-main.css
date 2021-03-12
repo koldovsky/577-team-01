@@ -243,7 +243,7 @@ color: red;
      }
      /*Bohdana*/
 
-     /* Star of Viktor`s part */
+     /* Start of Viktor`s part */
 
     .tour-booking{
     max-width: 80%;
@@ -318,7 +318,6 @@ color: red;
         flex-direction: column;
         max-width: 100%; 
         max-height: 400px;
-        /* display: block; */
     }
 
     .text-content{
@@ -329,29 +328,29 @@ color: red;
 
     @media (min-width: 800px){
         
-        .tour-booking{
-            max-width: 80%;
-        }
+            .tour-booking{
+                max-width: 80%;
+            }
 
-        .city{
-            display: flex;
-            justify-content: space-between;
-            flex-direction: row; 
-            line-height: 1.5;
-        } 
+            .city{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row; 
+                line-height: 1.5;
+            } 
 
 
-        .text-content{
-            max-width: 37%;
-            align-self: center;
-            padding-left: 20px;
-        }
+            .text-content{
+                max-width: 37%;
+                align-self: center;
+                padding-left: 20px;
+            }
 
-        .photo{
-        max-width: 50%; 
-        max-height: 800px;
-        display: block;
-        }
+            .photo{
+            display: block;
+            max-width: 50%; 
+            max-height: 800px;
+            }
 
     } 
 
@@ -411,9 +410,103 @@ color: red;
     #contacts-btn:hover{
         background-color: #000000; 
         padding: 10px 35px 13px 35px;
+        border-radius: 5px;
     }
 
 /* End of Victor's Part */
+
+/* Start of Viktor`s part */
+
+.background-of-faq{
+        background-color: #232528;
+    }
+
+    .grey-color{
+        color: #505155;
+    }
+
+    .heading-of-faq{
+        margin: 0;
+        font-family: Playfair Display;
+        font-size: 45px;
+        color: #fff;
+    }
+
+
+    .faq{
+        max-width: 80%;
+        margin: auto;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .text-content-of-faq{
+        max-width: auto;
+        font-family: Roboto;
+        font-size: 13px;
+        color: #969799;
+    }
+
+    .text-content-of-faq p{
+        font-size: 19px;
+        line-height: 2;
+    }
+
+    .text-content-of-faq ul{
+        padding: 0 0 0 15px;
+    }
+
+    .text-content-of-faq ul li{
+        padding: 20px 0 20px 0;
+        border-bottom: 1px solid #505155;
+    }
+
+    .accordion-header{
+        font-size: 17px;
+        color:#fff;
+    }
+
+    .accordion-content{
+        font-size: 15px;
+        color:  #a7a7a9;
+    }
+
+    .faq-img img{
+        width: 100%;
+        height: 550px;
+    }
+
+    .faq-img{
+        max-width: auto;
+    }
+
+    @media (min-width: 800px){
+                
+            .faq{
+            max-width: 80%;
+            margin: auto;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+            
+            .text-content-of-faq{
+            max-width: 40%;
+            font-family: Roboto;
+            font-size: 13px;
+            color: #969799;
+        }
+
+            .faq-img{
+            max-width: 40%;
+    }
+}
+
+/* End of Viktor`s part */
+
 
 /*Den*/
 #beautiful {

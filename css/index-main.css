@@ -18,14 +18,14 @@
     min-width: 200px;
 }
 
-.info {
+.info-about {
     background-color: var(--main-color);
     display: grid;
     grid-template-rows: 1fr 1fr;
     
 }
 
-.info h2 {
+.info-about h2 {
     color: #6f7380;
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
@@ -33,7 +33,7 @@
     margin-top: 50px;
 }
 
-.info h2::before {
+.info-about h2::before {
     content: "一";
     color: #f51400;
 }
@@ -102,7 +102,7 @@
 }
 
 @media (min-width: 800px) {
-    .info{
+    .info-about {
         grid-template-rows: none;
         grid-template-columns: 1fr 1fr;
         margin-top: 60px;
@@ -110,7 +110,7 @@
         margin-right: 30px;
     }
 
-     .info h2{
+     .info-about h2 {
          margin-top: auto;
      }
 

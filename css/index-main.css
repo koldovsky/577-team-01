@@ -218,24 +218,15 @@ color: red;
        background-color: #ffffff;
     
    }
- @media (min-width: 610px){
+ @media (min-width: 800px){
      main .main-container{
          display: grid;
          grid-gap: 50px;
-         grid-template-columns: 1fr 1fr ;
-         
-         
-
+         grid-template-columns: 1fr 1fr  1fr;
+            
      }
     }
-    @media (min-width: 800px) {
-         main .main-container{
-         grid-template-columns: 1fr 1fr 1fr;
-         
-
-     }
-
-    }
+   
  .smaller-image{
      width: 350px;
      text-align: center;
@@ -273,7 +264,7 @@ color: red;
     font-family: 'roboto', sans-serif;
  }
 
- @media (min-width: 610px) {
+ @media (min-width: 800px) {
      main .nav {
          display: flex;
         }
@@ -295,7 +286,7 @@ color: red;
        text-align: center;
        
    }
-   @media (min-width: 610px) {
+   @media (min-width: 800px) {
        main .beauty{
            display: flex;
            flex-direction: row;
@@ -308,7 +299,7 @@ color: red;
          color:#505155;
          list-style: none;
          font-size: 15px;
-         text-align: left;
+         text-align: center;
          font-family: 'roboto', sans-serif;
          
      }

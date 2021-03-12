@@ -149,6 +149,10 @@
     color: var(--secondary-color);
     text-align: center;
 }
+.icon {
+    display: flex;
+    justify-content: center;
+}
 .experience {
 font-family: 'Playfair Display', serif;
 font-size: 34px;

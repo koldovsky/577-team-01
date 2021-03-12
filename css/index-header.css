@@ -1,12 +1,14 @@
 /* Berdyk Halyna*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
 
 header {
     background-image: url("../img/header-bg.png");
-    background-origin: content-box;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    min-height: 200px;
 }
 
 :root {
@@ -16,23 +18,37 @@ header {
     --logo-font-family: 'Playfair Display', serif;
 }
 
-.logo > img {
-    width: 188px;
+body {
+    max-width: 980px;
+    margin: auto;
 }
 
+.logo > img {
+    width: 188px;
+    padding: 30px;
+}
+
+.main-menu {
+    display: none;
+}
+    
 .main-menu a {
     color: var(--menu-color);
     font-size: 14px;
     font-family: var(--main-font-family);
     text-decoration: none;
+    font-weight: bolder;
 }
  
 .main-menu li {
     list-style: none;
+    text-align: right;
+    
 }
 
 .main-menu a:hover {
     text-shadow:0px 0px 10px #f7f7f7;
+    font-weight: bold;
 }
 
 #subtitle {
@@ -40,6 +56,7 @@ header {
     font-family: var(--main-font-family);
     font-size: 13px;
     font-weight: bold;
+    padding-left: 30px;
 }
 
 #subtitle::before {
@@ -47,10 +64,35 @@ header {
     color: #f51400;
 }
 
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
 .banner h1 {
     font-family: var(--logo-font-family);
-    font-size: 180px;
+    font-size: 70px;
     color: var(--main-color);
+    margin-left: 30px;
+    font-weight: 600;
+}
+
+.banner iframe {
+    border-width: 10px;
+    border-color: #ffffff;
+    border-style: solid;
+   max-width: 350px;
+   max-height: 200px;
+   margin-left: 30px;
+}
+
+.trip {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 1;
+    padding: 30px;
 }
 
 .trip p:first-child {
@@ -64,12 +106,14 @@ header {
     color: var(--main-color);
     font-family: var(--main-font-family);
     font-size: 13px;
+
 }
 
 .trip p:nth-last-child(2) {
     color: #ffffffbf;
     font-family: var(--main-font-family);
     font-size: 13px;
+    
 }
 
 .trip a {
@@ -77,6 +121,7 @@ header {
     font-family: var(--main-font-family);
     font-size: 14px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .trip a:hover {
@@ -88,5 +133,73 @@ header {
     content: "   →";
     color: #ffffff;
     pointer-events: none;
+}
+
+@media (min-width: 800px) {
+
+    .burger-icon {
+    display: none;
+}
+
+.logo {
+    display: block;
+}
+
+header nav {
+    display: flex;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    align-items: center;
+    padding: 30px;
+}
+
+.button a::after {
+content: "   →";
+color: var(--main-color);
+}
+
+.button a {
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    color: #FFFFFF;
+    text-align: center;
+    transition: color 0.7s;
+    background-color: transparent;
+}
+
+.button a:hover {
+    color: #01292b;
+    background-color: #FFFFFF;
+    cursor: pointer;
+
+}
+
+.button a:hover::after {
+color: #01292b;
+}
+
+.banner h1 {
+ font-size: 125px;
+}
+
+.promo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
+}
+
+.banner iframe {
+   border-width: 10px;
+   border-color: #ffffff;
+   border-style: solid;
+   max-width: 450px;
+   max-height: 300px;
+}
 }
 /* Berdyk Halyna*/

@@ -7,6 +7,9 @@
     --main-color: #ffffff;
     --main-font-family:'Roboto', sans-serif;
     --secondary-font-family: 'Playfair Display', serif;
+    --before-heading-line: #EE2E14;
+    --mini-heading-color: #6F7380;
+    --middle-section-bg-color: #232528;
 }
 
 .info-instruction {
@@ -311,31 +314,36 @@ color: red;
     max-width: 80%;
     margin: auto;
     padding: 100px 0 100px 0;
-    color: #505155;
-    font-family: Roboto;
+    color: var(--secondary-color);
+    font-family: var(--main-font-family);
     }
 
     .text-content-of-heading {
         max-width: 70%;
-        font-size: 19px;
+        font-size: 13px;
+        color: var(--mini-heading-color);
+        text-transform: uppercase;
     }
 
     .red-color{
-        color: #EE2E14;
+        color: var(--before-heading-line);
     }
 
     .heading-of-booking{
-        font-family: Playfair;
-        font-size: 36px;
-        color: #505155;
+        font-family: var(--secondary-font-family);
+        font-size: 45px;
+        text-transform: none;
+        color: var(--secondary-color);
         padding: 20px 0 20px 0;
         margin: 0;
     }
 
     .text-content-of-heading p{
         margin: 0 0 40px 0;
+        font-size: 19px;
         line-height: 2;
-        font-weight: normal;
+        text-transform: none;
+        color: var(--secondary-color);
     }
 
     .city-nav {
@@ -346,7 +354,7 @@ color: red;
 
     .city-nav a{
         text-decoration: none;
-        color: #969799; 
+        color: var(--mini-heading-color); 
         font-size: 17px;
         font-weight: bold;
         margin: 0 70px 0 0;
@@ -359,13 +367,17 @@ color: red;
 
 
     .contents-display{
-        border-top: 1px solid #969799;
+        border-top: 1px solid var(--mini-heading-color);
         padding-top: 20px;
     }
 
     .contents-display img{
         max-width: 100%; 
         height: 100%; 
+    }
+
+    .contents-display .heading-of-booking{
+        font-size: 36px;
     }
 
     .city{
@@ -385,8 +397,6 @@ color: red;
     .text-content{
         max-width: 100%;
     }
-
-    /* З моїх тестів одного медіа-запиту достатньо */
 
     @media (min-width: 800px){
         
@@ -419,7 +429,7 @@ color: red;
     .text-content .point{
         font-size: 13px;
         font-weight: bold;
-        color: #6F7380;
+        color: var(--mini-heading-color);
     }
 
 
@@ -436,7 +446,7 @@ color: red;
 
     .text-content .tour-description{
         font-size: 17px;
-        color: #707070;
+        color: var(--mini-heading-color);
     }
 
     .item img{
@@ -448,28 +458,27 @@ color: red;
     .item{
         display: flex;
         align-items: center;
-        font-family: Roboto;
+        font-family: var(--main-font-family);
         font-size: 15px;
         padding: 10px 0 10px 0;
     }
 
-    #contacts-btn{
-        display: inline-block;
+    .btn{
         margin: 10% 0 0 0;
+    }
+
+    #contacts-btn{
         background-color: #15a9ee;
-        color: #fff;
+        color: var(--main-color);
         text-decoration: none;
         font-size: 14px;
         padding: 10px 32px 10px 32px;
-        transition: padding 0.5s ease-in-out .1s; /* Вирішив додати маленьку анімацію, щоб виглядало не так сумно (стало щє сумніше -_-)*/
+        transition: padding 0.3s ease-in-out .1s; 
     }
-
-    /* Довго грав з тим, щоб margin при ховері не працював.
-    Як можна побачити - програв :( */
 
     #contacts-btn:hover{
         background-color: #000000; 
-        padding: 10px 35px 13px 35px;
+        padding: 13px 35px 13px 35px;
         border-radius: 5px;
     }
 
@@ -478,18 +487,18 @@ color: red;
 /* Start of Viktor`s part */
 
 .background-of-faq{
-        background-color: #232528;
+        background-color: var(--middle-section-bg-color);
     }
 
     .grey-color{
-        color: #505155;
+        color: var(--secondary-color);
     }
 
     .heading-of-faq{
         margin: 0;
-        font-family: Playfair Display;
+        font-family: var(--secondary-font-family);
         font-size: 45px;
-        color: #fff;
+        color: var(--main-color);
     }
 
 
@@ -504,9 +513,9 @@ color: red;
 
     .text-content-of-faq{
         max-width: auto;
-        font-family: Roboto;
+        font-family: var(--main-font-family);
         font-size: 13px;
-        color: #969799;
+        color: var(--mini-heading-color);
     }
 
     .text-content-of-faq p{
@@ -520,35 +529,31 @@ color: red;
 
     .text-content-of-faq ul li{
         padding: 20px 0 20px 0;
-        border-bottom: 1px solid #505155;
+        border-bottom: 1px solid var(--secondary-color);
     }
 
     .accordion-header{
         font-size: 17px;
-        color:#fff;
+        color: var(--main-color);
     }
 
     .accordion-content{
         font-size: 15px;
-        color:  #a7a7a9;
+        color:  var (var(--mini-heading-color));
     }
 
     .faq-img img{
-        width: 100%;
-        height: 670px;
-    }
-
-    .faq-img{
-        max-width: auto;
+        width: 80%;
+        height: 500px;
     }
 
     @media (min-width: 800px){
                 
             .faq{
+            display: flex;
             max-width: 100%;
             margin: auto;
             padding-top: 10px;
-            display: flex;
             flex-direction: row;
             justify-content: space-around;
         }
@@ -561,7 +566,10 @@ color: red;
         }
 
             .faq-img{
-            max-width: 40%;
+            display: flex;
+            align-items: center;
+            max-width: 50%;
+
     }
 }
 

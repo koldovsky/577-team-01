@@ -350,6 +350,8 @@ color: red;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--mini-heading-color);
     }
 
     .city-nav a{
@@ -363,12 +365,6 @@ color: red;
 
     .city-nav a:hover{
         color: black;
-    }
-
-
-    .contents-display{
-        border-top: 1px solid var(--mini-heading-color);
-        padding-top: 20px;
     }
 
     .contents-display img{

@@ -2,17 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
-header {
-    background-image: url("../img/header-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 200px;
-}
-
 :root {
     --menu-color: #f7f7f7;
     --main-color: #ffffff;
+    --before-heading-line: #EE2E14;
+    --button-hover-color: #01292b;
     --main-font-family: 'Roboto', sans-serif;
     --logo-font-family: 'Playfair Display', serif;
 }
@@ -20,6 +14,14 @@ header {
 body {
     max-width: 980px;
     margin: auto;
+}
+
+header {
+    background-image: url("../img/header-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
 }
 
 .logo>img {
@@ -45,7 +47,7 @@ body {
 }
 
 .main-menu a:hover {
-    text-shadow: 0px 0px 10px #f7f7f7;
+    text-shadow: 0px 0px 10px var(--menu-color);
     font-weight: bold;
 }
 
@@ -59,7 +61,7 @@ body {
 
 #subtitle::before {
     content: "一 ";
-    color: #f51400;
+    color:var(--before-heading-line);
 }
 
 .banner {
@@ -79,7 +81,7 @@ body {
 
 .banner iframe {
     border-width: 10px;
-    border-color: #ffffff;
+    border-color: var(--main-color);
     border-style: solid;
     max-width: 350px;
     max-height: 200px;
@@ -108,7 +110,7 @@ body {
 }
 
 .trip p:nth-last-child(2) {
-    color: #ffffffbf;
+    color: var(--main-color);
     font-family: var(--main-font-family);
     font-size: 13px;
 }
@@ -123,12 +125,12 @@ body {
 
 .trip a:hover {
     text-decoration: underline;
-    color: #ffffff;
+    color:var (--main-color);
 }
 
 .trip a::after {
     content: "   →";
-    color: #ffffff;
+    color:var (--main-color);
     pointer-events: none;
 }
 
@@ -159,21 +161,21 @@ body {
     }
     .button a {
         padding: 0.35em 1.2em;
-        border: 0.1em solid #FFFFFF;
+        border: 0.1em solid var(--main-color);
         margin: 0 0.3em 0.3em 0;
         border-radius: 0.12em;
-        color: #FFFFFF;
+        color: var(--main-color);
         text-align: center;
         transition: color 0.7s;
         background-color: transparent;
     }
     .button a:hover {
-        color: #01292b;
-        background-color: #FFFFFF;
+        color: var(--button-hover-color);
+        background-color: var(--main-color);
         cursor: pointer;
     }
     .button a:hover::after {
-        color: #01292b;
+        color: var(--button-hover-color);
     }
     .banner h1 {
         font-size: 125px;
@@ -188,6 +190,5 @@ body {
         max-height: 400px;
     }
 }
-
 
 /* Berdyk Halyna*/

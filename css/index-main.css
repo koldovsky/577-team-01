@@ -1,12 +1,16 @@
 /*Halyna Berdyk*/
+
 :root {
     --secondary-color: #505155;
-    --menu-color: #f5f5f5;
     --main-color: #ffffff;
-    --highlight-color: #14a9ee;
     --before-heading-line: #EE2E14;
     --mini-heading-color: #6F7380;
     --middle-section-bg-color: #232528;
+    --highlight-color:  #14a9ee;
+    --third-color: #000000;
+    --content-color: #969799;
+    --input-color: #464c5c;
+    --incolor: #9199ab;
     --main-font-family: 'Roboto', sans-serif;
     --secondary-font-family: 'Playfair Display', serif;
 }
@@ -110,11 +114,9 @@
         margin-left: 30px;
         margin-right: 30px;
     }
-
     .info-about h2 {
         margin-top: auto;
     }
-
     .instruction {
         grid-template-rows: none;
         grid-template-columns: 1fr 1fr 1fr;
@@ -125,14 +127,17 @@
         margin-right: 20px;
         align-items: stretch;
     }
-
     .instruction img {
         width: 100px;
     }
 }
 
+
 /*Halyna Berdyk*/
+
+
 /*Andrii*/
+
 .testimonials {
     background-image: url("../img/testimonials-bg.png");
     background-origin: content-box;
@@ -146,7 +151,7 @@
 }
 
 #testimonials {
-    font-family: var(--main-font-family);
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
     color: var(--secondary-color);
     text-align: center;
@@ -172,7 +177,7 @@
 }
 
 .name {
-    font-family: var(--main-font-family);
+    font-family: 'Roboto', sans-serif;
     font-size: 22px;
     color: var(--middle-section-bg-color);
     text-align: center;
@@ -181,7 +186,7 @@
 .feedback {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
-    color: var(--mini-heading-color);
+    color: #707070;
     text-align: center;
 }
 
@@ -198,11 +203,15 @@
     border-width: 10px;
     border-style: solid;
     border-radius: 60%;
-    border-color: var(--menu-color);
+    border-color: #f5f5f5;
 }
 
+
 /* Andrii*/
+
+
 /*Bohdana*/
+
 .gray-text::before {
     content: "一 ";
     color: var(--before-heading-line);
@@ -275,7 +284,6 @@
     main .nav {
         display: flex;
     }
-
     main .numbers {
         display: flex;
         flex-direction: row;
@@ -310,8 +318,12 @@
     font-family: var(--main-font-family);
 }
 
+
 /*Bohdana*/
+
+
 /* Start of Viktor`s part */
+
 .tour-booking {
     max-width: 80%;
     margin: auto;
@@ -366,7 +378,7 @@
 }
 
 .city-nav a:hover {
-    color: var(--middle-section-bg-color);
+    color: var(--third-color);
 }
 
 .contents-display img {
@@ -400,20 +412,17 @@
     .tour-booking {
         max-width: 100%;
     }
-
     .city {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         line-height: 1.5;
     }
-
     .text-content {
         max-width: 37%;
         align-self: center;
         padding-left: 20px;
     }
-
     .photo {
         display: block;
         max-width: 50%;
@@ -471,13 +480,17 @@
 }
 
 #contacts-btn:hover {
-    background-color: var(--middle-section-bg-color);
+    background-color: var(--third-color);
     padding: 13px 35px 13px 35px;
     border-radius: 5px;
 }
 
+
 /* End of Victor's Part */
+
+
 /* Start of Viktor`s part */
+
 .background-of-faq {
     background-color: var(--middle-section-bg-color);
 }
@@ -547,14 +560,12 @@
         flex-direction: row;
         justify-content: space-around;
     }
-
     .text-content-of-faq {
         max-width: 40%;
         font-family: var(--main-font-family);
         font-size: 13px;
-        color: var(--mini-heading-color);
+        color: var(--content-color);
     }
-
     .faq-img {
         display: flex;
         align-items: center;
@@ -562,20 +573,25 @@
     }
 }
 
+
 /* End of Viktor`s part */
+
+
 /*Den*/
+
 #beautiful {
     color: var(--main-color);
     font-size: 30px;
 }
 
 #landscapes {
-    color: var(--secondary-color);
+    color: var(--content-color);
     font-size: 30px;
 }
 
 .beautiful-landscapes {
     margin-bottom: 10px;
+    background-color: var(--middle-section-bg-color);
 }
 
 .carousel {
@@ -585,27 +601,34 @@
 
 .norway-beauty {
     font-family: var(--main-font-family);
+    color:rgba(255, 255, 255, 0.6);
 }
 
-.contacts {
-    background-image: url(/img/norway-berg.png);
-    background-size: cover;
+.contacts-background {
+    background-image: url(../img/norway-berg.png);
+    background-size:100%;
 }
 
-#contacts {
+.contacts-form {
     font-family: var(--main-font-family);
     font-size: 12px;
     color: var(--secondary-color);
-    text-align: center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color: var(--middle-section-bg-color);
+    margin-left:200px;
+    margin-right:400px;
+    padding:10px;
 }
 
-.contacts h2 {
-    color: var(--secondary-color);
+.contacts-form h2 {
+    color: var(--mini-heading-color);
     font-family: var(--main-font-family);
     font-size: 13px;
 }
 
-.contacts h2::before {
+.contacts-form h2::before {
     content: "一";
     color: var(--before-heading-line);
 }
@@ -618,4 +641,33 @@
 
 #request-a-quote {
     background-color: var(--highlight-color);
+    color: var(--main-color);
+    width:60%;
+    height:20%;
+}
+#stunning-spots {
+    color: var(--main-color);
+    font-family: var(--main-font-family);
+    font-size: 13px;
+    font-weight: bold;
+}
+#stunning-spots::before {
+    content: "一 ";
+    color: var(--before-heading-line);
+}
+.beautiful-landscapes-colors{
+    display:flex;
+    justify-content:flex-start;
+    gap:4px;
+}
+#gray-text{
+    text-align:center;
+}
+input{
+    width: 100%;
+    color: var(--incolor);
+    background-color: var(--input-color);
+    margin:5px;
+    display:flex;
+    align-content:flex-start;    
 }

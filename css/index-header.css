@@ -1,7 +1,7 @@
 /* Berdyk Halyna*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap'); 
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
 :root {
     --menu-color: #f7f7f7;
     --main-color: #ffffff;
@@ -38,7 +38,7 @@ header {
     font-size: 14px;
     font-family: var(--main-font-family);
     text-decoration: none;
-    font-weight: bolder;
+    font-weight: 700;
 }
 
 .main-menu li {
@@ -55,13 +55,13 @@ header {
     color: var(--main-color);
     font-family: var(--main-font-family);
     font-size: 13px;
-    font-weight: bold;
+    font-weight: 500;
     padding-left: 30px;
 }
 
 #subtitle::before {
     content: "一 ";
-    color:var(--before-heading-line);
+    color: var(--before-heading-line);
 }
 
 .banner {
@@ -100,7 +100,7 @@ header {
     color: var(--main-color);
     font-family: var(--main-font-family);
     font-size: 17px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .trip p:nth-child(2) {
@@ -120,17 +120,17 @@ header {
     font-family: var(--main-font-family);
     font-size: 14px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .trip a:hover {
     text-decoration: underline;
-    color:var (--main-color);
+    color: var (--main-color);
 }
 
 .trip a::after {
     content: "   →";
-    color:var (--main-color);
+    color: var (--main-color);
     pointer-events: none;
 }
 
@@ -145,9 +145,11 @@ header {
     .logo {
         display: block;
     }
+
     header nav {
         display: flex;
     }
+
     .main-menu {
         display: flex;
         justify-content: space-evenly;
@@ -155,10 +157,12 @@ header {
         align-items: center;
         padding: 30px;
     }
+
     .button a::after {
         content: "   →";
         color: var(--main-color);
     }
+
     .button a {
         padding: 0.35em 1.2em;
         border: 0.1em solid var(--main-color);
@@ -169,22 +173,27 @@ header {
         transition: color 0.7s;
         background-color: transparent;
     }
+
     .button a:hover {
         color: var(--button-hover-color);
         background-color: var(--main-color);
         cursor: pointer;
     }
+
     .button a:hover::after {
         color: var(--button-hover-color);
     }
+
     .banner h1 {
         font-size: 125px;
     }
+
     .promo {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-bottom: 50px;
     }
+
     .banner iframe {
         max-width: 500px;
         max-height: 400px;

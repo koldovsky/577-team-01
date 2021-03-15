@@ -44,7 +44,7 @@ body {
 .contact-info p {
     font-family: var(--main-font-family);
     font-size: 14px;
-    color: var(--secondary-color);
+    color: var(--secondary-footer-color);
 }
 
 .email {
@@ -105,20 +105,16 @@ body {
 }
 
 .footer-menu a:hover {
-    text-shadow: 0px 0px 10px #f7f7f7;
+    text-shadow: 0px 0px 10px var(--menu-color);
     font-weight: bold;
     color: var(--menu-color);
 }
 
-@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
-.social-icons a,
-a:hover {
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'); .social-icons a, a:hover {
     text-decoration: none;
 }
 
-.socialbtns,
-.socialbtns ul,
-.socialbtns li {
+.socialbtns, .socialbtns ul, .socialbtns li {
     margin: 0;
     padding: 5px;
 }
@@ -131,8 +127,8 @@ a:hover {
 .socialbtns .fa {
     width: 40px;
     height: 28px;
-    color: #FFF;
-    background-color: #000;
+    color: var(--main-color);
+    background-color: var(--bg-color-nav);
     padding-top: 12px;
     border-radius: 20px;
     -moz-border-radius: 20px;
@@ -155,7 +151,7 @@ a:hover {
     -o-transition: all ease 0.5s;
 }
 
-@media (min-width: 680px) {
+@media (min-width: 610px) {
     .contact-info {
         grid-template-rows: none;
         grid-template-columns: 1fr 1fr;
@@ -168,19 +164,23 @@ a:hover {
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 15px;
     }
+
     .footer-nav {
         display: block;
     }
+
     .footer-logo {
         display: flex;
         justify-content: center;
     }
+
     .footer-menu {
         display: flex;
         justify-content: space-around;
         margin-right: 200px;
         margin-left: 200px;
     }
+
     .footer-menu a {
         font-size: 10px;
     }

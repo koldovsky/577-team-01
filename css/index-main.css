@@ -588,6 +588,7 @@
 
 .beautiful-landscapes {
     margin-bottom: 10px;
+    background-color:#232428;
 }
 
 .carousel {
@@ -597,27 +598,34 @@
 
 .norway-beauty {
     font-family: 'Roboto', serif;
+    color:rgba(255, 255, 255, 0.6);
 }
 
-.contacts {
-    background-image: url(/img/norway-berg.png);
-    background-size: cover;
+.contacts-background {
+    background-image: url(../img/norway-berg.png);
+    background-size:100%;
 }
 
-#contacts {
+.contacts-form {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     color: var(--secondary-color);
-    text-align: center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:#232428;
+    margin-left:200px;
+    margin-right:400px;
+    padding:10px;
 }
 
-.contacts h2 {
+.contacts-form h2 {
     color: #6f7380;
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
 }
 
-.contacts h2::before {
+.contacts-form h2::before {
     content: "一";
     color: #f51400;
 }
@@ -629,5 +637,34 @@
 }
 
 #request-a-quote {
-    background-color: #00BFFF;
+    background-color:#13bde3;
+    color:white;
+    width:60%;
+    height:20%;
+}
+#stunning-spots {
+    color: var(--main-color);
+    font-family: var(--main-font-family);
+    font-size: 13px;
+    font-weight: bold;
+}
+#stunning-spots::before {
+    content: "一 ";
+    color: #f51400;
+}
+.beautiful-landscapes-colors{
+    display:flex;
+    justify-content:flex-start;
+    gap:4px;
+}
+#gray-text{
+    text-align:center;
+}
+input{
+    width: 100%;
+    color:#9199ab;
+    background-color:#464c5c;
+    margin:5px;
+    display:flex;
+    align-content:flex-start;    
 }

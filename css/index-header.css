@@ -25,7 +25,7 @@ header {
 }
 
 .logo>img {
-    width: 188px;
+    width: 270px;
     padding: 30px;
 }
 
@@ -38,7 +38,7 @@ header {
     font-size: 14px;
     font-family: var(--main-font-family);
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .main-menu li {
@@ -57,6 +57,8 @@ header {
     font-size: 13px;
     font-weight: 500;
     padding-left: 30px;
+    margin: 0;
+    padding-top: 50px;
 }
 
 #subtitle::before {
@@ -182,6 +184,10 @@ header {
 
     .button a:hover::after {
         color: var(--button-hover-color);
+    }
+
+    #subtitle {
+        font-size: 18px;
     }
 
     .banner h1 {

@@ -581,11 +581,14 @@
 #beautiful {
     color: var(--main-color);
     font-size: 30px;
+    font-family: var(--secondary-font-family);
 }
 
 #landscapes {
     color: var(--content-color);
     font-size: 30px;
+    font-family: var(--secondary-font-family);
+
 }
 
 .beautiful-landscapes {
@@ -593,7 +596,7 @@
     background-color: var(--middle-section-bg-color);
 }
 
-.carousel {
+.spotscarousel {
     width: 300px;
     max-height: 300px;
 }

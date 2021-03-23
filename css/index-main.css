@@ -283,7 +283,7 @@
     main .nav {
         display: flex;
     }
-    main .numbers {
+    main #numbers {
         display: flex;
         flex-direction: row;
         flex: 1;
@@ -291,7 +291,7 @@
     }
 }
 
-.numbers {
+#number {
     list-style-type: none;
     color: var(--middle-section-bg-color);
     font-size: 60px;

@@ -111,6 +111,14 @@ body {
     color: var(--menu-color);
 }
 
+.clock {
+    color: var(--menu-color);
+    background-color: var(--bg-color-nav);
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+
 
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'); .social-icons a, a:hover {
     text-decoration: none;

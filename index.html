@@ -8,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"> 
     <link rel="stylesheet" href="css/index-header.css">
-    <link rel="stylesheet" href="css/index-modal-menu.css">
     <link rel="stylesheet" href="css/index-main.css">
     <link rel="stylesheet" href="css/index-footer.css">
 </head>
@@ -19,25 +18,8 @@
         <nav>
             <div class="logo">
                 <img src="img/logo_norway.png" alt="company's logo">
-                <a href="#openModal">☰</a>
+                <button class="open-btn" id="open">☰</button>
             </div>
-            <!--<section id="openModal" class="modal">
-                <div class="modal-content">
-                  <div class="modal-body">
-                    <div class="logo-cross">
-                      <img src="img/logo_norway.png" alt="company's logo">
-                      <a href="#close" title="Close" class="close">✖</a>
-                    </div>
-                    <ul class="main-nav-menu">
-                      <li><a href="#info-about">About Us</a></li>
-                      <li><a href="#places">Itinerary</a></li>
-                      <li><a href="#testimonials">Testimonials</a></li>
-                      <li><a href="#facebook">Blog</a></li>
-                      <li><a href="#connection">Contacts</a></li><br>
-                      <li class="button"><a href="#contacts">Join Us</a></li>
-                  </div>
-                </div>
-              </section> -->
             <ul class="main-menu">
                 <li><a href="#info-about">About Us</a></li>
                 <li><a href="#places">Itinerary</a></li>
@@ -47,9 +29,28 @@
                 <li class="button"><a href="#contacts">Join Us</a></li>
             </ul>
         </nav>
+         <!--MODAL WINDOW -->
+    <div class="modal-container-window" id="modal">
+        <div class="modal-nav-menu">
+          <div class="modal-header-menu">
+            <button class="close-btn" id="close"> ✖ </button>
+            <img src="/img/logo_norway.png" alt="Company's Logotip">
+          <div class="modal-content-nav-menu">
+            <ul class="main-nav-menu">
+                <li><a href="#info-about">About Us</a></li>
+                <li><a href="#places">Itinerary</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#facebook">Blog</a></li>
+                <li><a href="#contact">Contacts</a></li><br>
+                <li class="btn-contacts"><a href="#contacts">Join Us</a></li>
+          </div>
+        </div>
+      </div>
+      </div>
+              <!--MODAL WINDOW-->
         <div class="banner">
             <p id="subtitle">YOUR PERFECT JORNEY TO</p>
-            <h1>Norway</h1>
+            <h1>Norway </h1>
             <div class="promo">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/mB1dE0FotdY?start=10" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div class="trip">
@@ -513,7 +514,7 @@
     </footer>
     <!--Halyna Berdyk-->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    
+    <script src="/js/index-header.js"></script>
 </body>
 
 </html>

@@ -9,6 +9,7 @@ open.addEventListener('click', () => modal.classList.add('show-modal'));
 // Hide modal
 close.addEventListener('click', () => modal.classList.remove('show-modal'));
 
+// Hide modal after click-menu
 menu.addEventListener('click',() =>  modal.classList.remove('show-modal'));
 
 // Hide modal on outside click

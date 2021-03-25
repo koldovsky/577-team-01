@@ -386,15 +386,11 @@ width: 40%;
     background-color: #f44336;
     color: white;
     opacity: 1;
-     transition: opacity 0.6s;
-  }
-  .alert-help {
-    padding: 20px;
-    background-color: #0e12e0;
-    color: white;
-    opacity: 1;
     transition: opacity 0.6s;
+    margin-bottom: 15px;
   }
+  
+  .alert.help {background-color: #4CAF50;}
   
   .closebtn {
     margin-left: 15px;

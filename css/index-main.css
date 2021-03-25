@@ -533,14 +533,20 @@ button, input[type='submit'] {
     border-bottom: 1px solid var(--secondary-color);
 }
 
-.accordion-header {
+.accordion{
     font-size: 17px;
     color: var(--main-color);
+    padding: 0 0 0 15px;
+    transition: 1s;
 }
 
-.accordion-content {
+.panel{
     font-size: 15px;
     color: var (var(--mini-heading-color));
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid var(--secondary-color);
+    display: none;
+    overflow: hidden;
 }
 
 .faq-img img {

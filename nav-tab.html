@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" href="nav-tab-styles.css">
+    </head>
+    <body>
+        <div class="main-container-of-city">
+            <ul class="nav nav-tabs city-nav" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="oslo-tab" data-bs-toggle="tab" data-bs-target="#oslo" type="button" role="tab" aria-controls="oslo" aria-selected="true">Oslo</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="trondheim-tab" data-bs-toggle="tab" data-bs-target="#trondheim" type="button" role="tab" aria-controls="trondheim" aria-selected="false">Trondheim</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="bodo-tab" data-bs-toggle="tab" data-bs-target="#bodo" type="button" role="tab" aria-controls="bodo" aria-selected="false">Bodø</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="lofoten-islands-tab" data-bs-toggle="tab" data-bs-target="#lofoten-islands" type="button" role="tab" aria-controls="lofoten-islands" aria-selected="false">Lofoten Islands</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tromso-tab" data-bs-toggle="tab" data-bs-target="#tromso" type="button" role="tab" aria-controls="tromso" aria-selected="false">Tromsø</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active city" id="oslo" role="tabpanel" aria-labelledby="oslo-tab">
+                    <!--Місто-->
+                    <div class="photo">
+                        <img src="img/oslo.jpeg" alt="Oslo">
+                    </div>
+                    <div class="text-content">
+                        <!--блок з текстом-->
+                        <p class="point">Oslo - First point</p>
+                        <h3 class="heading-of-booking">The Capital and Largest City of Norway</h3>
+                        <br>
+                        <span class="red-color">1 night</span>
+                        <span class="hotel-name">Scandic Hotel</span>
+                        <p class="tour-description">We start our journey from Oslo, the capital of Norway. On a walking tour, you will see the opera house, parliament, the royal palace, and more.</p>
+                        <br>
+                        <div class="options-list">
+                            <!--Блок для переліку опцій-->
+                            <div class="item">
+                                <img src="img/dinner.png" alt="icon">- Dinner included
+                            
+                            </div>
+                            <div class="item">
+                                <img src="img/backpack.png" alt="icon">- Leave your backpack in the hotel
+                            
+                            </div>
+                            <div class="item">
+                                <img src="img/airport.png" alt="icon">- Transfer from the airport
+                            
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <a href="#contacts" id="contacts-btn">Book &nbspnow→</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="trondheim" role="tabpanel" aria-labelledby="trondheim-tab">
+                    <div class="photo">
+                        <img src="img/trondheim.jpeg" alt="Trondheim">
+                    </div>
+                    <div class="text-content">
+                        <p class="point">Trondheim - Second point</p>
+                        <h3 class="heading-of-booking">The First Capital With the Royal Residence</h3>
+                        <br>
+                        <span class="red-color">2 nights</span>
+                        <span class="hotel-name">Radisson Hotel</span>
+                        <p class="tour-description">The main Christian landmark of Norway, the Nidaros Cathedral is located here. The
+                        architectural sign of the new era is a high TV tower with a revolving restaurant.</p>
+                        <br>
+                        <div class="options-list">
+                            <div class="item">
+                                <img src="img/bus.png" alt="icon">- Arriving at 9 a.m.
+                        
+                            </div>
+                            <div class="item">
+                                <img src="img/cam.png" alt="icon">- Instagram-friendly places
+                        
+                            </div>
+                            <div class="item">
+                                <img src="img/arrow.png" alt="icon">- 3-hours walking tour
+                        
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <a href="#contacts" id="contacts-btn">Book &nbspnow→</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="bodo" role="tabpanel" aria-labelledby="bodo-tab">
+                    <div class="photo">
+                        <img src="img/bodo.jpeg" alt="Bodo">
+                    </div>
+                    <div class="text-content">
+                        <p class="point">Bodø - Third point</p>
+                        <h3 class="heading-of-booking">Unique Fishing Spot in Fascinating Scenery</h3>
+                        <br>
+                        <span class="red-color">2 nights</span>
+                        <span class="hotel-name">Gronheim Guesthouse</span>
+                        <p class="tour-description">We've left "urban" Norway, and Bodø is our first stop for no sightseeing. We will simply
+                        go fishing, enjoy the fresh air, and try dishes with salmon and trout.</p>
+                        <br>
+                        <div class="options-list">
+                            <div class="item">
+                                <img src="img/point.png" alt="icon">- Fishing spots
+                        
+                            </div>
+                            <div class="item">
+                                <img src="img/dinner.png" alt="icon">- Fish dinner
+                        
+                            </div>
+                            <div class="item">
+                                <img src="img/cable-ride.png" alt="icon">- Cable car ride
+                        
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <a href="#contacts" id="contacts-btn">Book &nbspnow→</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="lofoten-islands" role="tabpanel" aria-labelledby="lofoten-islands-tab">
+                    <div class="photo">
+                        <img src="img/lofoten-islands.jpeg" alt="Lofoten Islands">
+                    </div>
+                    <div class="text-content">
+                        <p class="point">Lofoten Islands - Fourth point</p>
+                        <h3 class="heading-of-booking">Stunning Place Beyond the Arctic circle</h3>
+                        <br>
+                        <span class="red-color">2 nights</span>
+                        <span class="hotel-name">Cabinn Hotel</span>
+                        <p class="tour-description">The islands are located in the harsh waters of the Norwegian Sea. It is a land of
+                        wild nature, majestic mountains, fjords, and long sandy beaches.</p>
+                        <br>
+                        <div class="options-list">
+                            <div class="item">
+                                <img src="img/beach.png" alt="icon">- Unique beaches
+                        
+                            </div>
+                            <div class="item">
+                                <img src="img/liqueurs.png" alt="icon">- Tasting of local liqueurs
+                        
+                            </div>
+                            <div class="item">
+                                <img src="img/boat.png" alt="icon">- Boat trip
+                        
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <a href="#contacts" id="contacts-btn">Book &nbspnow→</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tromso" role="tabpanel" aria-labelledby="tromso-tab">
+                    <div class="photo">
+                        <img src="img/tromso.jpeg" alt="Tromsø">
+                    </div>
+                    <div class="text-content">
+                        <p class="point">Tromsø - Final point</p>
+                        <h3 class="heading-of-booking">Spot for Hunting the Northern Lights</h3>
+                        <br>
+                        <span class="red-color">3 nights</span>
+                        <span>Scandic Hotel</span>
+                        <p class="tour-description">The largest Norwegian city in the Arctic Circle is also called “Paris of the North”.
+                        The main attractions are the Polar Museum and the Arctic Cathedral.</p>
+                        <br>
+                        <div class="options-list">
+                            <div class="item">
+                                <img src="img/suitcase.png" alt="icon">- Free souvenirs
+                        
+                            </div>
+                            <div class="item">
+                                <img src="img/airport.png" alt="icon">- International airport
+                        
+                            </div>
+                            <div class="item">
+                                <img src="img/telescope.png" alt="icon">- Northern Lights
+                        
+                            </div>
+                            <div class="btn">
+                                <a href="#contacts" id="contacts-btn">Book &nbspnow→</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body></html>

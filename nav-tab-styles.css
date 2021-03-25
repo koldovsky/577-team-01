@@ -1,0 +1,188 @@
+body{
+    max-width: 80%;
+    margin: auto;
+}
+
+:root {
+    --secondary-color: #505155;
+    --main-color: #ffffff;
+    --main-font-family: 'Roboto', sans-serif;
+    --secondary-font-family: 'Playfair Display', serif;
+    --before-heading-line: #EE2E14;
+    --mini-heading-color: #6F7380;
+    --middle-section-bg-color: #232528;
+}
+
+.tour-booking {
+    max-width: 80%;
+    margin: auto;
+    padding: 100px 0 100px 0;
+    color: var(--secondary-color);
+    font-family: var(--main-font-family);
+}
+
+.text-content-of-heading {
+    max-width: 70%;
+    font-size: 13px;
+    color: var(--mini-heading-color);
+    text-transform: uppercase;
+}
+
+.red-color {
+    color: var(--before-heading-line);
+}
+
+.heading-of-booking {
+    font-family: var(--secondary-font-family);
+    font-size: 45px;
+    text-transform: none;
+    color: var(--secondary-color);
+    padding: 20px 0 20px 0;
+    margin: 0;
+}
+
+.text-content-of-heading p {
+    margin: 0 0 40px 0;
+    font-size: 19px;
+    line-height: 2;
+    text-transform: none;
+    color: var(--secondary-color);
+}
+
+.city-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: 1px solid var(--mini-heading-color);
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    border-style: none;
+    text-decoration: none;
+    color: var(--mini-heading-color);
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 70px 0 0;
+    transition: color 1s;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active:hover {
+    border-style: none;
+    color: black;
+}
+
+.contents-display img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.contents-display .heading-of-booking {
+    font-size: 36px;
+}
+
+.city {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 400px;
+}
+
+.photo img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.text-content {
+    max-width: 100%;
+}
+
+@media (min-width: 800px) {
+    .tour-booking {
+        max-width: 100%;
+    }
+
+    .tab-content > .active{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+    .city {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        line-height: 1.5;
+    }
+    .text-content {
+        max-width: 37%;
+        align-self: center;
+        padding-left: 20px;
+    }
+    .photo {
+        display: block;
+        max-width: 50%;
+        max-height: 800px;
+    }
+}
+
+.text-content .point {
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--mini-heading-color);
+}
+
+.text-content .red-color {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.text-content .hotel-name {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 0 0 15%;
+}
+
+.text-content .tour-description {
+    font-size: 17px;
+    color: var(--mini-heading-color);
+}
+
+.item img {
+    height: 25px;
+    width: 25px;
+    padding-right: 10px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    font-family: var(--main-font-family);
+    font-size: 15px;
+    padding: 10px 0 10px 0;
+}
+
+.btn {
+    margin: 10% 0 0 0;
+}
+
+#contacts-btn {
+    background-color: #15a9ee;
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 32px 10px 32px;
+    transition: padding 0.3s ease-in-out .1s;
+}
+
+#contacts-btn:hover {
+    background-color: #000000;
+    padding: 13px 35px 13px 35px;
+    border-radius: 5px;
+}

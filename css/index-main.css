@@ -504,16 +504,14 @@ button, input[type='submit'] {
 }
 
 .faq {
-    max-width: 80%;
     margin: auto;
-    padding-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .text-content-of-faq {
-    max-width: auto;
+    max-width: 100%;
     font-family: var(--main-font-family);
     font-size: 13px;
     color: var(--mini-heading-color);
@@ -524,33 +522,45 @@ button, input[type='submit'] {
     line-height: 2;
 }
 
-.text-content-of-faq ul {
-    padding: 0 0 0 15px;
-}
-
-.text-content-of-faq ul li {
-    padding: 20px 0 20px 0;
+.accordion-item{
     border-bottom: 1px solid var(--secondary-color);
+    padding: 0 0 15px 0;
 }
 
 .accordion{
+    width: 100%;
+    text-align: left;
     font-size: 17px;
     color: var(--main-color);
-    padding: 0 0 0 15px;
-    transition: 1s;
+    transition: 0.5s;
+}
+
+.accordion:before{
+    content: "+";
+    color: var(--main-color);
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+button.accordion.active:before {
+    content: "-";
+    font-size: 25px;
 }
 
 .panel{
-    font-size: 15px;
-    color: var (var(--mini-heading-color));
-    padding: 20px 0 20px 0;
-    border-bottom: 1px solid var(--secondary-color);
     display: none;
     overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.panel p{
+    font-size: 15px;
+    color: var(--mini-heading-color);
 }
 
 .faq-img img {
-    width: 80%;
+    width: 100%;
     height: 500px;
 }
 
@@ -559,7 +569,6 @@ button, input[type='submit'] {
         display: flex;
         max-width: 100%;
         margin: auto;
-        padding-top: 10px;
         flex-direction: row;
         justify-content: space-around;
     }
@@ -572,7 +581,7 @@ button, input[type='submit'] {
     .faq-img {
         display: flex;
         align-items: center;
-        max-width: 50%;
+        max-width: 40%;
     }
 }
 

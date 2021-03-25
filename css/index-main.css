@@ -245,6 +245,22 @@
     width: 350px;
     text-align: center;
 }
+.feeling { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow:hidden; 
+  } 
+  .feeling iframe, 
+  .feeling object, 
+  .feeling embed {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%; 
+  }
+
 
 .title {
     font-weight: bold;

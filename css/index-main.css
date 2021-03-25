@@ -226,17 +226,17 @@
 }
 
 .main-container {
-    padding-top: 60px;
-    padding-left: 60px;
-    padding-bottom: 60px;
-    padding-right: 60px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
     background-color: var(--main-color);
 }
 
 @media (min-width: 610px) {
     main .main-container {
         display: grid;
-        grid-gap: 50px;
+        grid-gap: 30px;
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
@@ -291,7 +291,7 @@
     }
 }
 
-#number {
+#numbers {
     list-style-type: none;
     color: var(--middle-section-bg-color);
     font-size: 60px;

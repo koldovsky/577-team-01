@@ -359,41 +359,31 @@
     color: var(--secondary-color);
 }
 
-.city-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-bottom: 20px;
-    border-bottom: 1px solid var(--mini-heading-color);
-}
-
-.city-nav a {
-    text-decoration: none;
-    color: var(--mini-heading-color);
+button, input[type='submit'] {
+    margin-right: 10px;
+    color: var(--mini-heading-color); 
     font-size: 17px;
     font-weight: bold;
-    margin: 0 70px 0 0;
     transition: color 1s;
 }
 
-.city-nav a:hover {
-    color: var(--third-color);
+.nav-tabs .nav-link.active {
+    border-bottom: solid 2px var(--before-heading-line);
+    border-radius: 3px;
 }
 
-.contents-display img {
-    max-width: 100%;
-    height: 100%;
+.nav-tabs .nav-link {
+    margin-bottom: -1px;
+    border: none;
 }
 
-.contents-display .heading-of-booking {
-    font-size: 36px;
+
+.nav-tabs .nav-link:hover {
+    color: #000000;
 }
 
-.city {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    line-height: 1.5;
+.tab-content{
+    margin-top: 5px;
 }
 
 .photo {
@@ -403,7 +393,13 @@
     max-height: 400px;
 }
 
+.photo img {
+    max-width: 100%;
+    height: 100%;
+}
+
 .text-content {
+    margin-top: 40px;
     max-width: 100%;
 }
 
@@ -411,20 +407,21 @@
     .tour-booking {
         max-width: 100%;
     }
-    .city {
+
+    .tab-content > .active{
         display: flex;
         justify-content: space-between;
-        flex-direction: row;
-        line-height: 1.5;
+        margin-top: 20px;
     }
+
     .text-content {
-        max-width: 37%;
+        max-width: 40%;
         align-self: center;
         padding-left: 20px;
     }
     .photo {
         display: block;
-        max-width: 50%;
+        max-width: 55%;
         max-height: 800px;
     }
 }
@@ -452,8 +449,8 @@
 }
 
 .item img {
-    height: 25px;
-    width: 25px;
+    height: 35px;
+    width: 35px;
     padding-right: 10px;
 }
 
@@ -470,7 +467,7 @@
 }
 
 #contacts-btn {
-    background-color: var(--highlight-color);
+    background-color: #15a9ee;
     color: var(--main-color);
     text-decoration: none;
     font-size: 14px;
@@ -479,10 +476,11 @@
 }
 
 #contacts-btn:hover {
-    background-color: var(--third-color);
+    background-color: #000000;
     padding: 13px 35px 13px 35px;
     border-radius: 5px;
 }
+
 
 
 /* End of Victor's Part */

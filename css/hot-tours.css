@@ -1,9 +1,9 @@
 :root {
     --main-color: #fff;
-    --primary-color: rgb(226, 245, 250);
-    --secondary-color: #130a14;
-    --btn-color: #f3875dfb;
-    --third-color: #7addfc;
+    --primary-tour-color: rgb(226, 245, 250);
+    --secondary-tour-color: #130a14;
+    --btn-tour-color: #f3875dfb;
+    --third-tour-color: #7addfc;
     --sorted-btn-color: #aad0e3;
     --bg-color: #232528;
     --main-font-family: 'Roboto', sans-serif; ;
@@ -18,7 +18,7 @@
 #hot-tours h1 {
     font-size: 40px;
     font-family: var(--primary-font-family);
-    color: var(--primary-color);
+    color: var(--primary-tour-color);
     text-align: center;
     margin: 0;
     padding: 20px;
@@ -31,7 +31,7 @@
 .hot-tours h2 {
     font-size: 20px;
     font-family: var(--primary-font-family);
-    color: var(--third-color);
+    color: var(--third-tour-color);
     text-align: center;
     padding: 5px;
 }
@@ -65,7 +65,7 @@
   .info-btn {
     display: inline-block;
     border-radius: 4px;
-    background-color: var(--btn-color) ;
+    background-color: var(--btn-tour-color) ;
     border: none;
     color: var(--main-color);
     text-align: center;
@@ -106,7 +106,7 @@
     background-color: var(--sorted-btn-color);
   }
   .active {
-    color: var(--secondary-color);
+    color: var(--secondary-tour-color);
     font-weight: bold;
   }
 

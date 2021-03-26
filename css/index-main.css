@@ -385,7 +385,7 @@ button, input[type='submit'] {
 
 .nav-tabs .nav-link.active {
     border-bottom: solid 2px var(--before-heading-line);
-    border-radius: 3px;
+    border-radius: 0;
 }
 
 .nav-tabs .nav-link {
@@ -465,7 +465,7 @@ button, input[type='submit'] {
 }
 
 .item img {
-    height: 35px;
+    height: 30px;
     width: 35px;
     padding-right: 10px;
 }
@@ -527,6 +527,7 @@ button, input[type='submit'] {
 }
 
 .text-content-of-faq {
+    padding-left: 5%;
     max-width: 100%;
     font-family: var(--main-font-family);
     font-size: 13px;
@@ -549,6 +550,8 @@ button, input[type='submit'] {
     font-size: 17px;
     color: var(--main-color);
     transition: 0.5s;
+    border: none;
+    outline: none;
 }
 
 .accordion:before{
@@ -576,6 +579,7 @@ button.accordion.active:before {
 }
 
 .faq-img img {
+    padding-top: 10px;
     width: 100%;
     height: 500px;
 }

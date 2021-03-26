@@ -34,14 +34,14 @@ sortToursAscendingButtons.addEventListener('click', sortToursAscending);
 sortToursDescendingButton.addEventListener('click', sortToursDescending);
 
 function sortToursAscending() {
-    sortToursDescendingButton.classList.remove('active');
-    sortToursAscendingButtons.classList.add('active');
+    sortToursDescendingButton.classList.remove('active-sort');
+    sortToursAscendingButtons.classList.add('active-sort');
     fetchTours("ascending");
 };
 
 function sortToursDescending() {
-    sortToursDescendingButton.classList.add('active');
-    sortToursAscendingButtons.classList.remove('active');
+    sortToursDescendingButton.classList.add('active-sort');
+    sortToursAscendingButtons.classList.remove('active-sort');
     fetchTours("descending");
 };
 

@@ -1,0 +1,130 @@
+:root {
+    --main-color: #fff;
+    --primary-color: #f8afac8c;
+    --secondary-color: #130a14;
+    --btn-color: #fa683c;
+    --third-color: #7addfc;
+    --sorted-btn-color: #aad0e3;
+    --bg-color: #111010be;
+    --main-font-family: 'Roboto', sans-serif; ;
+    --primary-font-family: 'Playfair Display', serif;
+}
+
+
+#hot-tours {
+    background: var(--bg-color);
+}
+
+#hot-tours h1 {
+    font-size: 40px;
+    font-family: var(--primary-font-family);
+    color: var(--primary-color);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.hot-tours img {
+  width: 100%;
+}
+
+.hot-tours h2 {
+    font-size: 20px;
+    font-family: var(--primary-font-family);
+    color: var(--third-color);
+    text-align: center;
+    padding: 5px;
+}
+
+.hot-tours p {
+    font-size: 15px;
+    font-family: var(--main-font-family);
+    color: var(--main-color);
+    text-align: center;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.hot-tours {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    padding: 20px;
+}
+
+.hot-tours > article {
+  background: rgba(130, 223, 247, 0.3);
+}
+  
+  .button-container {
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 15px;
+  }
+  
+  .info-btn {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: var(--btn-color) ;
+    border: none;
+    color: var(--main-color);
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+  .info-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .info-btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .info-btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .info-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  .sort-asc, .sort-dsc {
+    margin-left: 20px;
+    margin-top: 10px;
+    background-color: var(--sorted-btn-color);
+  }
+  .active {
+    color: var(--secondary-color);
+    font-weight: bold;
+  }
+
+  .exchange-rate {
+    color: var(--main-color);
+    padding-left: 20px;
+  }
+
+
+  @media ( min-width: 650px) {
+      .hot-tours {
+          grid-template-rows: none;
+          grid-template-columns: 1fr 1fr;
+      }
+     
+  }
+
+
+  @media (min-width: 800px) {
+      .hot-tours {
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+  }

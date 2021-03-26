@@ -10,6 +10,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index-header.css">
     <link rel="stylesheet" href="css/index-main.css">
+    <link rel="stylesheet" href="css/hot-tours.css">
     <link rel="stylesheet" href="css/index-footer.css">
 </head>
 
@@ -39,7 +40,7 @@
                 <li><a href="#info-about">About Us</a></li>
                 <li><a href="#places">Itinerary</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#facebook">Blog</a></li>
+                <li><a href="#hot-tours">Hot Tours</a></li>
                 <li><a href="#connection">Contacts</a></li>
                 <li class="button"><a href="#contacts">Join Us</a></li>
             </ul>
@@ -55,7 +56,7 @@
                             <li><a href="#info-about">About Us</a></li>
                             <li><a href="#places">Itinerary</a></li>
                             <li><a href="#testimonials">Testimonials</a></li>
-                            <li><a href="#facebook">Blog</a></li>
+                            <li><a href="#hot-tours">Hot Tours</a></li>
                             <li><a href="#contact">Contacts</a></li><br>
                             <li class="btn-contacts"><a href="#contacts">Join Us</a></li>
                     </div>
@@ -537,9 +538,31 @@
                 </div>
 
                 <!--Andrii-->
-
+                <!--Halyna Berdyk-->
+                <section id="hot-tours">
+                    <h1>Hot Tours to Norway</h1>
+                    <div class="exchange-rate">
+                        <label>
+                            Covert from:
+                        <input type="text" class="curr-from" value="NOK">
+                    </label>
+                    <label>
+                        Rate:
+                        <input type="text" class="rate" readonly>
+                    </label>
+                    <button class="show-rate info-btn">Convert</button>
+                    <select class="select-value">
+                        <option value="NOK">NOK</option>
+                        <option value="UAH">UAH</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                    </select>
+                    </div>
+                    <button class="sort-asc info-btn active">Sort by price Ascending</button>
+                    <button class="sort-dsc info-btn">Sort by price Descending</button>
+                    <div class="hot-tours">
+                </section>
     </main>
-    <!--Halyna Berdyk-->
     <footer>
         <section class="connection" id="connection">
             <div class="contact-info">
@@ -571,7 +594,7 @@
                         <li><a href="#info-about">About Us</a></li>
                         <li><a href="#places">Itinerary</a></li>
                         <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="#facebook">Blog</a></li>
+                        <li><a href="#hot-tours">Hot Tours</a></li>
                         <li><a href="#connections">Contacts</a></li>
                         <li><a href="#contacts">Join Us</a></li>
                     </ul>
@@ -603,6 +626,8 @@
     <script src="js/index-header.js"></script>
     <script src="js/accordion.js"></script>
     <script src="js/index-footer.js"></script>
+    <script src="js/hot-tour.js"></script>
+    <script src="js/currency-converter.js"></script>
 </body>
 
 </html>

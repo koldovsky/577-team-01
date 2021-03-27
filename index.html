@@ -10,6 +10,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index-header.css">
     <link rel="stylesheet" href="css/index-main.css">
+    <link rel="stylesheet" href="css/hot-tours.css">
     <link rel="stylesheet" href="css/index-footer.css">
 </head>
 
@@ -39,7 +40,7 @@
                 <li><a href="#info-about">About Us</a></li>
                 <li><a href="#places">Itinerary</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#facebook">Blog</a></li>
+                <li><a href="#hot-tours">Hot Tours</a></li>
                 <li><a href="#connection">Contacts</a></li>
                 <li class="button"><a href="#contacts">Join Us</a></li>
             </ul>
@@ -55,7 +56,7 @@
                             <li><a href="#info-about">About Us</a></li>
                             <li><a href="#places">Itinerary</a></li>
                             <li><a href="#testimonials">Testimonials</a></li>
-                            <li><a href="#facebook">Blog</a></li>
+                            <li><a href="#hot-tours">Hot Tours</a></li>
                             <li><a href="#contact">Contacts</a></li><br>
                             <li class="btn-contacts"><a href="#contacts">Join Us</a></li>
                     </div>
@@ -410,49 +411,36 @@
                         questions, you can contact us directly or fill out the form below.</p>
 
                     <div class="accordion-block">
-                        <!--Робимо аккордеончик)-->
-                        <ul class="collection">
-                            <!--Список елементів-->
-                            <li>
-                                <!--Елементи аккордеону-->
-                                <div class="accordion-header">Does this tour require physical fitness?</div>
-                                <!-- <div class="accordion-content">This tour is suitable for untrained tourists. No cliff climbing, we promise.</div> -->
-                            </li>
-                            <li>
-                                <div class="accordion-header">Will I be able to see the Northern Lights?</div>
-                                <!-- <div class="accordion-content">We cannot promise you this. The Northern Lights only appear in winter under special circumstances. But we will hunt it in Tromsø.</div> -->
-                            </li>
-                            <li>
-                                <div class="accordion-header">Can I take my children with me on the tour?</div>
-                                <!-- <div class="accordion-content">Yes, we offer a 50% discount for children.</div> -->
-                            </li>
-                            <li>
-                                <div class="accordion-header">Can I join you not in Oslo, but in another city?</div>
-                                <!-- <div class="accordion-content">Depending on the weather conditions, our route may change, so we strongly recommend starting with other tourists from Oslo. We do not change the route to pick up tourists on the way.</div> -->
-                            </li>
-                        </ul>
 
-                        <button class="accordion">Does this tour require physical fitness?</button>
-                        <div class="panel">
-                            <p>This tour is suitable for untrained tourists. No cliff climbing, we promise.</p>
+                        <div class = "accordion-item">
+                            <button class="accordion">Does this tour require physical fitness?</button>
+                            <div class="panel">
+                                <p>This tour is suitable for untrained tourists. No cliff climbing, we promise.</p>
+                            </div>
                         </div>
 
-                        <button class="accordion">Will I be able to see the Northern Lights?</button>
-                        <div class="panel">
-                            <p>We cannot promise you this. The Northern Lights only appear in winter under special
-                                circumstances. But we will hunt it in Tromsø.</p>
+                        <div class = "accordion-item">
+                            <button class="accordion">Will I be able to see the Northern Lights?</button>
+                            <div class="panel">
+                                <p>We cannot promise you this. The Northern Lights only appear in winter under special
+                                    circumstances. But we will hunt it in Tromsø.</p>
+                            </div>
                         </div>
 
-                        <button class="accordion">Can I take my children with me on the tour?</button>
-                        <div class="panel">
-                            <p>Yes, we offer a 50% discount for children.</p>
+                        <div class = "accordion-item">
+                            <button class="accordion">Can I take my children with me on the tour?</button>
+                            <div class="panel">
+                                <p>Yes, we offer a 50% discount for children.</p>
+                            </div>
                         </div>
 
-                        <button class="accordion">Can I join you not in Oslo, but in another city?</button>
-                        <div class="panel">
-                            <p>Depending on the weather conditions, our route may change, so we strongly recommend
-                                starting with other tourists from Oslo. We do not change the route to pick up tourists
-                                on the way.</p>
+                        <div class = "accordion-item">
+                            <button class="accordion">Can I join you not in Oslo, but in another city?</button>
+                            <div class="panel">
+                                <p>Depending on the weather conditions, our route may change, so we strongly recommend
+                                    starting with other tourists from Oslo. We do not change the route to pick up tourists
+                                    on the way.</p>
+                            </div>
                         </div>
 
                     </div>
@@ -550,9 +538,31 @@
                 </div>
 
                 <!--Andrii-->
-
+                <!--Halyna Berdyk-->
+                <section id="hot-tours">
+                    <h1>Hot Tours to Norway</h1>
+                    <div class="exchange-rate">
+                        <label>
+                            Covert from:
+                        <input type="text" class="curr-from" value="NOK">
+                    </label>
+                    <label>
+                        Rate:
+                        <input type="text" class="rate" readonly>
+                    </label>
+                    <button class="show-rate info-btn">Convert</button>
+                    <select class="select-value">
+                        <option value="NOK">NOK</option>
+                        <option value="UAH">UAH</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                    </select>
+                    </div>
+                    <button class="sort-asc info-btn active-sort">Sort by price Ascending</button>
+                    <button class="sort-dsc info-btn">Sort by price Descending</button>
+                    <div class="hot-tours">
+                </section>
     </main>
-    <!--Halyna Berdyk-->
     <footer>
         <section class="connection" id="connection">
             <div class="contact-info">
@@ -584,7 +594,7 @@
                         <li><a href="#info-about">About Us</a></li>
                         <li><a href="#places">Itinerary</a></li>
                         <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="#facebook">Blog</a></li>
+                        <li><a href="#hot-tours">Hot Tours</a></li>
                         <li><a href="#connections">Contacts</a></li>
                         <li><a href="#contacts">Join Us</a></li>
                     </ul>
@@ -615,7 +625,10 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <script src="js/index-header.js"></script>
+    <script src="js/accordion.js"></script>
     <script src="js/index-footer.js"></script>
+    <script src="js/hot-tour.js"></script>
+    <script src="js/currency-converter.js"></script>
 </body>
 
 </html>

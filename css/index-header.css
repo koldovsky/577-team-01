@@ -390,7 +390,7 @@ width: 40%;
     margin-bottom: 15px;
   }
   
-  .alert.help {background-color: #4CAF50;}
+  .alert.help {background-color: #0000CD;}
   
   .closebtn {
     margin-left: 15px;
@@ -406,3 +406,4 @@ width: 40%;
   .closebtn:hover {
     color: black;
   }
+  

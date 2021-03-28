@@ -488,13 +488,13 @@ button, input[type='submit'] {
     text-decoration: none;
     font-size: 14px;
     padding: 10px 32px 10px 32px;
-    transition: padding 0.3s ease-in-out .1s;
+    transition: padding 0.1s ease-in-out .1s;
 }
 
 #contacts-btn:hover {
     background-color: #000000;
     padding: 13px 35px 13px 35px;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 
@@ -520,6 +520,7 @@ button, input[type='submit'] {
 }
 
 .faq {
+    padding: 5% 0 5% 0;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -545,6 +546,7 @@ button, input[type='submit'] {
 }
 
 .accordion{
+    padding-left: 0;
     width: 100%;
     text-align: left;
     font-size: 17px;
@@ -566,11 +568,18 @@ button.accordion.active:before {
     font-size: 25px;
 }
 
+button.accordion.active{
+    padding-left: 15px;
+}
+
 .panel{
-    display: none;
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.5s ease-in-out;
+}
+
+.panel.active{
+    display: block;
 }
 
 .panel p{
@@ -600,7 +609,7 @@ button.accordion.active:before {
     }
     .faq-img {
         display: flex;
-        align-items: center;
+        padding-top: 120px;
         max-width: 40%;
     }
 }

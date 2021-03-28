@@ -194,7 +194,7 @@
 }
 
 .w-100 {
-    width: 20%!important;
+    width: 20%;
     border-width: 10px;
     border-style: solid;
     border-radius: 60%;
@@ -623,10 +623,21 @@ button.accordion.active:before {
     font-family: var(--secondary-font-family);
 
 }
+.carousel-inner-spots{
+     display: flex;
+}
+.carousel-spots{
+    content: "";
+    clear: both;
+    display: table;
+    height:auto;
+    max-width:100%;
+}
 
 .beautiful-landscapes {
     margin-bottom: 10px;
     background-color: var(--middle-section-bg-color);
+    padding:50px;
 }
 
 .spotscarousel {
@@ -653,7 +664,7 @@ button.accordion.active:before {
     align-items:center;
     background-color: var(--middle-section-bg-color);
     margin-left:200px;
-    margin-right:400px;
+    margin-right:300px;
     padding:10px;
 }
 
@@ -661,6 +672,7 @@ button.accordion.active:before {
     color: var(--mini-heading-color);
     font-family: var(--main-font-family);
     font-size: 13px;
+    
 }
 
 .contacts-form h2::before {
@@ -670,19 +682,21 @@ button.accordion.active:before {
 
 #book-the-journey {
     color: var(--main-color);
-    font-family: var(--main-font-family);
+    font-family: var(--secondary-font-family);
     font-size: 30px;
 }
 
 #request-a-quote {
     background-color: var(--highlight-color);
     color: var(--main-color);
-    width:60%;
+    width:80%;
     height:20%;
+    display: inline-block;
+    text-align:center;
 }
 #stunning-spots {
-    color: var(--main-color);
-    font-family: var(--main-font-family);
+    color: var(--secondary-color);
+    font-family: var(--secondary-font-family);
     font-size: 13px;
     font-weight: bold;
 }
@@ -706,4 +720,81 @@ input{
     display:flex;
     align-content:flex-start;    
 }
+.cont-form-fields{
+    width:80%;
+    height:20%;
+    margin-right:20px;
+}
+@media (max-width:600px){
+        .contacts-form {
+        font-family: var(--main-font-family);
+        font-size: 12px;
+        color: var(--secondary-color);
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        background-color: var(--middle-section-bg-color);
+        margin-left:50px;
+        margin-right:50px;
+        padding:10px;
+    }
 
+    .contacts-form h2 {
+        color: var(--mini-heading-color);
+        font-family: var(--main-font-family);
+        font-size: 13px;
+        
+    }
+
+    .contacts-form h2::before {
+        content: "一";
+        color: var(--before-heading-line);
+    }
+
+    #book-the-journey {
+        color: var(--main-color);
+        font-family: var(--secondary-font-family);
+        font-size: 30px;
+        text-align:center;
+    }
+
+    #request-a-quote {
+        background-color: var(--highlight-color);
+        color: var(--main-color);
+        width:80%;
+        height:20%;
+        display: inline-block;
+        text-align:center;
+    }
+    #stunning-spots {
+        color: var(--secondary-color);
+        font-family: var(--secondary-font-family);
+        font-size: 13px;
+        font-weight: bold;
+    }
+    #stunning-spots::before {
+        content: "一 ";
+        color: var(--before-heading-line);
+    }
+    .beautiful-landscapes-colors{
+        display:flex;
+        justify-content:flex-start;
+        gap:4px;
+    }
+    #gray-text{
+        text-align:center;
+    }
+    input{
+        width: 100%;
+        color: var(--incolor);
+        background-color: var(--input-color);
+        margin:5px;
+        display:flex;
+        align-content:flex-start;    
+    }
+    .cont-form-fields{
+        width:80%;
+        height:20%;
+        margin-right:20px;
+    }
+}

@@ -117,10 +117,16 @@
     padding-left: 20px;
   }
 
-  .convert-btn {
-    padding-right: 20px;
-    padding-top: 15px;
+ .select-value{
+  margin-top: 19px;
+  margin-left: 13px;
   }
+
+  #show-option {
+    margin-top: 9px;
+  }
+
+  
 
   @media ( min-width: 650px) {
       .hot-tours {
@@ -128,6 +134,10 @@
           grid-template-columns: 1fr 1fr;
       }
      
+      .convert-btn {
+        padding-right: 20px;
+        padding-top: 15px;
+      }
   }
 
 

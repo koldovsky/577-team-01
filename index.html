@@ -542,25 +542,21 @@
                 <section id="hot-tours">
                     <h1>Hot Tours to Norway</h1>
                     <div class="exchange-rate">
-                        <label>
-                            Covert from:
-                        <input type="text" class="curr-from" value="NOK">
-                    </label>
-                    <label>
-                        Rate:
-                        <input type="text" class="rate" readonly>
-                    </label>
-                    <button class="show-rate info-btn">Convert</button>
-                    <select class="select-value">
-                        <option value="NOK">NOK</option>
-                        <option value="UAH">UAH</option>
-                        <option value="USD">USD</option>
-                        <option value="EUR">EUR</option>
-                    </select>
-                    </div>
+                   <div class="sort-btn">
                     <button class="sort-asc info-btn active-sort">Sort by price Ascending</button>
                     <button class="sort-dsc info-btn">Sort by price Descending</button>
-                    <div class="hot-tours">
+                    </div>
+                    <div class="convert-btn">
+                        <button id="show-option" class="info-btn">Convert</button>
+                        <select class="select-value">
+                            <option value="NOK">NOK</option>
+                            <option value="UAH">UAH</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="hot-tours"></div>
                 </section>
     </main>
     <footer>
@@ -624,11 +620,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
+    <script src="js/tours-service.js"></script>
+    <script src="js/currency-service.js"></script>
+    <script src="js/tours-list.js"></script>
     <script src="js/index-header.js"></script>
     <script src="js/accordion.js"></script>
     <script src="js/index-footer.js"></script>
-    <script src="js/hot-tour.js"></script>
-    <script src="js/currency-converter.js"></script>
+    <script src="js/index.js"></script>
+    
+    
 </body>
 
 </html>

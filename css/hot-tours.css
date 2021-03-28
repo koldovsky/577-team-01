@@ -101,7 +101,7 @@
   }
   
   .sort-asc, .sort-dsc {
-    margin-left: 20px;
+    margin-left: 0;
     margin-top: 10px;
     background-color: var(--sorted-btn-color);
   }
@@ -111,10 +111,16 @@
   }
 
   .exchange-rate {
+    display: flex;
+    justify-content: space-between;
     color: var(--main-color);
     padding-left: 20px;
   }
 
+  .convert-btn {
+    padding-right: 20px;
+    padding-top: 15px;
+  }
 
   @media ( min-width: 650px) {
       .hot-tours {

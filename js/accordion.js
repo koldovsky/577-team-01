@@ -4,7 +4,7 @@ const acc = document.getElementsByClassName("accordion");
 
 for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function check() {
-    if (this.classList.contains("active")) {
+    if (acc[i].classList.contains("active")) {
       hideEl();
     } else {
       showEl();
@@ -12,7 +12,7 @@ for (let i = 0; i < acc.length; i++) {
 
     function showEl() {
       hideEl();
-      this.classList.toggle("active");
+      acc[i].classList.toggle("active");
       acc[i].nextElementSibling.classList.toggle("active");
       if (acc[i].nextElementSibling.style.maxHeight) {
         acc[i].nextElementSibling.style.maxHeight = null;

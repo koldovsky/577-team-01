@@ -135,7 +135,16 @@
     margin-top: 9px;
   }
 
+  .btn {
+    margin: 0;
+  }
   
+  .btn-info {
+    color: var(--main-color);
+    background-color:var(--btn-tour-color);
+    border-color: var(--btn-tour-color);
+    border:0;
+  }
 
   @media ( min-width: 650px) {
       .hot-tours {

@@ -4,6 +4,7 @@
     --secondary-tour-color: #130a14;
     --btn-tour-color: #f3875dfb;
     --third-tour-color: #7addfc;
+    --before-heading-line: #EE2E14;
     --sorted-btn-color: #aad0e3;
     --bg-color: #232528;
     --main-font-family: 'Roboto', sans-serif; ;
@@ -15,13 +16,21 @@
     background: var(--bg-color);
 }
 
-#hot-tours h1 {
-    font-size: 40px;
-    font-family: var(--primary-font-family);
-    color: var(--primary-tour-color);
-    text-align: center;
-    margin: 0;
-    padding: 20px;
+#hot-tours h5 {
+  color: var(--main-color);
+  font-family: var(--main-font-family);
+  font-size: 25px;
+  font-weight: 500;
+  padding-left: 30px;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+#hot-tours h5::before {
+  content: "一 ";
+  color: var(--before-heading-line);
 }
 
 .hot-tours img {

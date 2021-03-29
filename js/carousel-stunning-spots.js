@@ -1,9 +1,7 @@
 const carouselImages = [
-    'img/norway_ice.jpg',
-    'img/norway_ship.jpg',
-    'img/norway_sunset.jpg',
-    'img/norway-village.jpg',
-    'img/norway-village2.jpg'
+    'img/norway-landscape-mount.jpg',
+    'img/norway-landscape-night.jpg',
+    'img/norway-landscape-troll.jpg',
 ]
 
 

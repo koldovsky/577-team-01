@@ -654,7 +654,6 @@ button.accordion.active{
 }
 
 .beautiful-landscapes {
-    margin-bottom: 10px;
     background-color: var(--middle-section-bg-color);
     padding:50px;
 }
@@ -667,6 +666,28 @@ button.accordion.active{
 .norway-beauty {
     font-family: var(--main-font-family);
     color:rgba(255, 255, 255, 0.6);
+}
+.curr-img {
+    width: 100%;
+    border-radius: 30px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+
+}
+
+.prev, .next {
+    font-size: 30px;
+    color: var(--main-color);
+    background-color: transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+}
+.landscapes .lnd-btn {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
 }
 
 .contacts-background {
@@ -750,73 +771,7 @@ input{
     height:20%;
     margin-right:20px;
 }
-/*@media (min-width:650px){
-    .contacts-form {
-        padding: 50px;
-        margin-right: 100px;
-    }
-    
 
-    .contacts-form h2 {
-        color: var(--mini-heading-color);
-        font-family: var(--main-font-family);
-        font-size: 13px;
-        
-    }
-
-    .contacts-form h2::before {
-        content: "一";
-        color: var(--before-heading-line);
-    }
-
-    #book-the-journey {
-        color: var(--main-color);
-        font-family: var(--secondary-font-family);
-        font-size: 30px;
-        text-align:center;
-    }
-
-    #request-a-quote {
-        background-color: var(--highlight-color);
-        color: var(--main-color);
-        width:80%;
-        height:20%;
-        display: inline-block;
-        text-align:center;
-    }
-    #stunning-spots {
-        color: var(--secondary-color);
-        font-family: var(--secondary-font-family);
-        font-size: 13px;
-        font-weight: bold;
-    }
-    #stunning-spots::before {
-        content: "一 ";
-        color: var(--before-heading-line);
-    }
-    .beautiful-landscapes-colors{
-        display:flex;
-        justify-content:flex-start;
-        gap:4px;
-    }
-    #gray-text{
-        text-align:center;
-    }
-    input{
-        width: 100%;
-        color: var(--incolor);
-        background-color: var(--input-color);
-        margin:5px;
-        display:flex;
-        align-content:flex-start;    
-    }
-    .cont-form-fields{
-        width:80%;
-        height:20%;
-        margin-right:20px;
-    }
-} 
-*/
 @media(min-width: 800px){
     .contacts-background {
         padding-right: 200px;

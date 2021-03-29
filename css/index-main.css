@@ -157,6 +157,7 @@
     padding-top: 50px;
 }
 
+
 .experience {
     font-family: 'Playfair Display', serif;
     font-size: 34px;
@@ -178,10 +179,21 @@
     text-align: center;
     font-weight: bold;
 }
+
 .carousel {
-    width: 980px !important;
-    max-height:inherit !important; 
+    max-width: 100%;
+    display: block;
+    height: auto;
+    
 }
+@media(min-width: 610px) {
+.carousel-item img {
+    width: 100%;
+    height: 200px; /* висота фото */
+    object-fit: cover;
+  }
+}
+
 .carousel-caption {
     position: inherit;
     right: 0%;
@@ -191,6 +203,7 @@
     padding-bottom: 7rem;
     color: var(--secondary-color);
     text-align: center;
+    
 }
 
 .w-100 {
@@ -201,6 +214,7 @@
     border-color: #f5f5f5;
     margin: 30px;
     margin-left: 400px;
+   
 }
 
 .carousel-control-next-icon {

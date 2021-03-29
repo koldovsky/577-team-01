@@ -9,6 +9,7 @@
     --bg-color: #232528;
     --main-font-family: 'Roboto', sans-serif; ;
     --primary-font-family: 'Playfair Display', serif;
+    
 }
 
 
@@ -84,6 +85,11 @@
     margin-left: 7px;
   }
   
+  a {
+    color: var(--main-color);
+    text-decoration: none;
+  }
+
   .info-btn span {
     cursor: pointer;
     display: inline-block;

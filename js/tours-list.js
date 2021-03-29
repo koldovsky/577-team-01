@@ -31,7 +31,7 @@ class ToursList {
           <p class="card-text">${tour.description}</p>
              <div class="button-container">
                    <button class="info-btn  btn btn-info "  data-bs-toggle="modal" data-bs-target="#productInfoModal" data-id='${tour.id}'><span class=" btn btn-info" data-bs-toggle="modal" data-bs-target="#productInfoModal" data-id='${tour.id}'>Info</span></button>
-                   <button class="info-btn buy"><span>${(tour.price*rate).toFixed(2)} ${changeCurrIcon()} </span></button>
+                   <button class="info-btn buy"><a href="#contacts"><span>${(tour.price*rate).toFixed(2)} ${changeCurrIcon()}</span></a></button>
              </div>
      </article>`
   });

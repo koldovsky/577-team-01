@@ -186,12 +186,17 @@
     height: auto;
     
 }
-@media(min-width: 610px) {
-.carousel-item img {
-    width: 100%;
-    height: 200px; /* висота фото */
+
+.w-100{
+    width: 20%!important;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 60%;
+    border-color: #f5f5f5;
+    margin: 30px;
+    margin-left: 400px;
     object-fit: cover;
-  }
+
 }
 
 .carousel-caption {
@@ -206,20 +211,12 @@
     
 }
 
-.w-100 {
-    width: 20%!important;
-    border-width: 10px;
-    border-style: solid;
-    border-radius: 60%;
-    border-color: #f5f5f5;
-    margin: 30px;
-    margin-left: 400px;
-   
-}
+
 
 .carousel-control-next-icon {
     color: var(--secondary-color);
 }
+
 
 /* Andrii*/
 
@@ -502,13 +499,13 @@ button, input[type='submit'] {
     text-decoration: none;
     font-size: 14px;
     padding: 10px 32px 10px 32px;
-    transition: padding 0.3s ease-in-out .1s;
+    transition: padding 0.1s ease-in-out .1s;
 }
 
 #contacts-btn:hover {
     background-color: #000000;
     padding: 13px 35px 13px 35px;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 
@@ -534,6 +531,7 @@ button, input[type='submit'] {
 }
 
 .faq {
+    padding: 5% 0 5% 0;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -559,6 +557,7 @@ button, input[type='submit'] {
 }
 
 .accordion{
+    padding-left: 0;
     width: 100%;
     text-align: left;
     font-size: 17px;
@@ -580,11 +579,18 @@ button.accordion.active:before {
     font-size: 25px;
 }
 
+button.accordion.active{
+    padding-left: 15px;
+}
+
 .panel{
-    display: none;
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.5s ease-in-out;
+}
+
+.panel.active{
+    display: block;
 }
 
 .panel p{
@@ -614,7 +620,7 @@ button.accordion.active:before {
     }
     .faq-img {
         display: flex;
-        align-items: center;
+        padding-top: 120px;
         max-width: 40%;
     }
 }
@@ -637,10 +643,21 @@ button.accordion.active:before {
     font-family: var(--secondary-font-family);
 
 }
+.carousel-inner-spots{
+     display: flex;
+}
+.carousel-spots{
+    content: "";
+    clear: both;
+    display: table;
+    height:auto;
+    max-width:100%;
+}
 
 .beautiful-landscapes {
     margin-bottom: 10px;
     background-color: var(--middle-section-bg-color);
+    padding:50px;
 }
 
 .spotscarousel {
@@ -656,7 +673,12 @@ button.accordion.active:before {
 .contacts-background {
     background-image: url(../img/norway-berg.png);
     background-size:100%;
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
+
 
 .contacts-form {
     font-family: var(--main-font-family);
@@ -666,15 +688,17 @@ button.accordion.active:before {
     flex-direction:column;
     align-items:center;
     background-color: var(--middle-section-bg-color);
-    margin-left:200px;
-    margin-right:400px;
-    padding:10px;
+    padding-top:60px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .contacts-form h2 {
     color: var(--mini-heading-color);
     font-family: var(--main-font-family);
     font-size: 13px;
+    
 }
 
 .contacts-form h2::before {
@@ -684,19 +708,21 @@ button.accordion.active:before {
 
 #book-the-journey {
     color: var(--main-color);
-    font-family: var(--main-font-family);
+    font-family: var(--secondary-font-family);
     font-size: 30px;
 }
 
 #request-a-quote {
     background-color: var(--highlight-color);
     color: var(--main-color);
-    width:60%;
+    width:80%;
     height:20%;
+    display: inline-block;
+    text-align:center;
 }
 #stunning-spots {
-    color: var(--main-color);
-    font-family: var(--main-font-family);
+    color: var(--secondary-color);
+    font-family: var(--secondary-font-family);
     font-size: 13px;
     font-weight: bold;
 }
@@ -720,4 +746,82 @@ input{
     display:flex;
     align-content:flex-start;    
 }
+.cont-form-fields{
+    width:80%;
+    height:20%;
+    margin-right:20px;
+}
+/*@media (min-width:650px){
+    .contacts-form {
+        padding: 50px;
+        margin-right: 100px;
+    }
+    
 
+    .contacts-form h2 {
+        color: var(--mini-heading-color);
+        font-family: var(--main-font-family);
+        font-size: 13px;
+        
+    }
+
+    .contacts-form h2::before {
+        content: "一";
+        color: var(--before-heading-line);
+    }
+
+    #book-the-journey {
+        color: var(--main-color);
+        font-family: var(--secondary-font-family);
+        font-size: 30px;
+        text-align:center;
+    }
+
+    #request-a-quote {
+        background-color: var(--highlight-color);
+        color: var(--main-color);
+        width:80%;
+        height:20%;
+        display: inline-block;
+        text-align:center;
+    }
+    #stunning-spots {
+        color: var(--secondary-color);
+        font-family: var(--secondary-font-family);
+        font-size: 13px;
+        font-weight: bold;
+    }
+    #stunning-spots::before {
+        content: "一 ";
+        color: var(--before-heading-line);
+    }
+    .beautiful-landscapes-colors{
+        display:flex;
+        justify-content:flex-start;
+        gap:4px;
+    }
+    #gray-text{
+        text-align:center;
+    }
+    input{
+        width: 100%;
+        color: var(--incolor);
+        background-color: var(--input-color);
+        margin:5px;
+        display:flex;
+        align-content:flex-start;    
+    }
+    .cont-form-fields{
+        width:80%;
+        height:20%;
+        margin-right:20px;
+    }
+} 
+*/
+@media(min-width: 800px){
+    .contacts-background {
+        padding-right: 200px;
+        padding-left: 200px;
+    }
+    
+}

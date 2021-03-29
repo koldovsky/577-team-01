@@ -2,19 +2,31 @@
 
 const acc = document.getElementsByClassName("accordion");
 
-
 for (let i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
+  acc[i].addEventListener("click", function check() {
+    if (acc[i].classList.contains("active")) {
+      hideEl();
+    } else {
+      showEl();
+    }
 
-        this.classList.toggle("active");
+    function showEl() {
+      hideEl();
+      acc[i].classList.toggle("active");
+      acc[i].nextElementSibling.classList.toggle("active");
+      if (acc[i].nextElementSibling.style.maxHeight) {
+        acc[i].nextElementSibling.style.maxHeight = null;
+      } else {
+        acc[i].nextElementSibling.style.maxHeight = acc[i].nextElementSibling.scrollHeight + "px";
+      }
+    }
+  });
+}
 
-        const panel = this.nextElementSibling;
-        if (panel.style.display === "block" && panel.style.maxHeight) {
-            panel.style.display = "none";
-            panel.style.maxHeight = null;
-        } else {
-            panel.style.display = "block";
-            panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-    });
+function hideEl() {
+  for (let i = 0; i < acc.length; i++) {
+    acc[i].classList.toggle("active", false);
+    acc[i].nextElementSibling.classList.toggle("active", false);
+    acc[i].nextElementSibling.style.maxHeight = null;
+  }
 }

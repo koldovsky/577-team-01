@@ -181,18 +181,18 @@
 }
 
 .carousel {
-    max-width: 100%;
+    width: 100%;
     display: block;
     height: auto;
     
 }
-
-.w-100{
-    width: 20%!important;
-    margin: 30px;
-    text-align: center;
-    margin-left: 170px;
-
+@media (min-width: 610px){
+.img-fluid{
+    width:20%;
+    margin-left: 400px;
+    position:inherit;
+    
+}
 }
 
 .carousel-caption {

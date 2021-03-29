@@ -186,13 +186,15 @@
     height: auto;
     
 }
-@media (min-width: 610px){
+
+@media (min-width: 320px){
 .img-fluid{
+    display: block;
+    margin: 0 auto;
     width:20%;
-    margin-left: 400px;
-    position:inherit;
-    
+    height: auto;
 }
+
 }
 
 .carousel-caption {

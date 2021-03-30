@@ -55,15 +55,19 @@ class ToursList {
         this.addEventListeners();
       });
 
-      document
-      .querySelector('.sort-asc').addEventListener('click', async () => {
+      const sortAscendingButton = document.querySelector('.sort-asc');
+      sortAscendingButton.addEventListener('click', async () => {
       this.sortDirection = 'ascending';
+      sortDescendingButton.classList.remove('active-sort');
+      sortAscendingButton.classList.add('active-sort');
       await this.renderTours();
       this.addEventListeners();
   });
-      document
-      .querySelector('.sort-dsc').addEventListener('click', async () => {
+  const sortDescendingButton =  document.querySelector('.sort-dsc');
+  sortDescendingButton.addEventListener('click', async () => {
       this.sortDirection = 'descending';
+    sortDescendingButton.classList.add('active-sort');
+    sortAscendingButton.classList.remove('active-sort');
       await this.renderTours();
       this.addEventListeners();
   });
@@ -85,3 +89,4 @@ async handleProductInfoClick(event) {
   btnBuy.dataset.id = id;
 }
 }
+

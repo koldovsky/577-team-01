@@ -2,10 +2,10 @@
     --main-color: #fff;
     --primary-tour-color: rgb(226, 245, 250);
     --secondary-tour-color: #130a14;
-    --btn-tour-color: #f3875dfb;
-    --third-tour-color: #7addfc;
+    --btn-tour-color: #808080;
+    --third-tour-color: #64d7fa;
     --before-heading-line: #EE2E14;
-    --sorted-btn-color: #aad0e3;
+    --sorted-btn-color: #effafc;
     --bg-color: #232528;
     --main-font-family: 'Roboto', sans-serif; ;
     --primary-font-family: 'Playfair Display', serif;
@@ -75,7 +75,7 @@
   .info-btn {
     display: inline-block;
     border-radius: 4px;
-    background-color: var(--btn-tour-color) ;
+    background-color: var(--third-tour-color) ;
     border: none;
     color: var(--main-color);
     text-align: center;
@@ -95,6 +95,8 @@
     display: inline-block;
     position: relative;
     transition: 0.5s;
+    color: var(--bg-color);
+    text-decoration: none;
   }
   
   .info-btn span:after {
@@ -119,6 +121,7 @@
     margin-left: 0;
     margin-top: 10px;
     background-color: var(--sorted-btn-color);
+    color: var(--btn-tour-color)
   }
   .active-sort {
     color: var(--secondary-tour-color);
@@ -147,7 +150,7 @@
   
   .btn-info {
     color: var(--main-color);
-    background-color:var(--btn-tour-color);
+    background-color:var(--third-tour-color);
     border-color: var(--btn-tour-color);
     border:0;
   }

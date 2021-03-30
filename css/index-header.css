@@ -5,7 +5,8 @@
 :root {
     --menu-color: #f7f7f7;
     --main-color: #ffffff;
-    --secondary-color: #141414;
+    --secondary-color: #333232;
+    --sec-bg-color: #353535;
     --before-heading-line: #EE2E14;
     --button-hover-color: #01292b;
     --main-font-family: 'Roboto', sans-serif;
@@ -47,6 +48,7 @@ button:focus {
 .open-btn {
   padding: 12px 30px;
   font-size: 20px;
+  color: var(--main-color);
 }
 
 .container {
@@ -57,7 +59,7 @@ button:focus {
 }
 
 .modal-container-window {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: var(--sec-bg-color);
   display: none;
   position: fixed;
   top: 0;
@@ -71,7 +73,7 @@ button:focus {
 }
 
 .modal-nav-menu {
-  background-color: var(--secondary-color);
+  background-color: var(--sec-bg-color-color);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   position: absolute;
@@ -87,7 +89,7 @@ button:focus {
 }
 
 .modal-header-menu {
-  background: var(--secondary-color);
+  background: var(--sec-bg-color);
   color: #fff;
   padding: 50px;;
 }

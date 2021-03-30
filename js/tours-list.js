@@ -30,7 +30,7 @@ class ToursList {
           <h2 class="card-title">${tour.title}</h2>
           <p class="card-text">${tour.description}</p>
              <div class="button-container">
-                   <button class="info-btn  btn btn-info "  data-bs-toggle="modal" data-bs-target="#productInfoModal" data-id='${tour.id}'><span class=" btn btn-info" data-bs-toggle="modal" data-bs-target="#productInfoModal" data-id='${tour.id}'>Info</span></button>
+                   <button class="info-btn   btn-info "  data-bs-toggle="modal" data-bs-target="#productInfoModal" data-id='${tour.id}'><span class=" " data-bs-toggle="modal" data-bs-target="#productInfoModal" data-id='${tour.id}'>Info</span></button>
                    <button class="info-btn buy"><a href="#contacts"><span>${(tour.price*rate).toFixed(2)} ${changeCurrIcon()}</span></a></button>
              </div>
      </article>`
@@ -70,8 +70,8 @@ class ToursList {
 
 }
 async handleProductInfoClick(event) {
-  const button = event.target; // Button that triggered the modal
-  const id = button.dataset.id; // Extract info from data-* attributes
+  const button = event.target; 
+  const id = button.dataset.id; 
   const tour = await this.toursService.getToursById(id);
   const modal = document.querySelector('#productInfoModal');
   const tourImg = modal.querySelector('.card-img-top');
